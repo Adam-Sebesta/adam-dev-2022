@@ -13,7 +13,7 @@
         :to="v.to"
         :class="'project' + (i === 0 ? ' first' : '')"
       >
-        <h5>{{ v.title }}</h5>
+        <h4>{{ v.title }}</h4>
         <div class="project-lower">
           <div>
             {{ v.sector + " / " + v.year }}
@@ -60,22 +60,20 @@ const maxProjects = computed((): Number => {
     }
   }
   .project {
-    margin: var(--space-xxl) var(--space-xl) var(--space-lg) var(--space-xl);
+    padding: var(--space-xxl) var(--space-xl) var(--space-sm) var(--space-xl);
     width: calc(100% - var(--space-xl) * 2);
     color: black;
-    h5 {
-      font-size: 3.5vw;
-      line-height: 2.5vw;
-    }
+    position: relative;
+
     &.first {
       // margin-top: calc(var(--space-lg) +);
     }
     .project-lower {
       display: flex;
       justify-content: flex-end;
-      font-size: 0.75vw;
+      font-size: var(--text-xs);
       .stack {
-        margin-left: 5rem;
+        margin: 0 var(--space-xl);
       }
     }
   }

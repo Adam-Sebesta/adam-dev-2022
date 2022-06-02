@@ -26,9 +26,12 @@
 </template>
 <style lang="scss">
 .projectDivider {
-  width: 100%;
+  width: 120%;
+  position: absolute;
+  bottom: 0%;
+  left: -26%;
 }
 .projectDividerline {
-  width: 110%;
+  width: 105%;
 }
 </style>
