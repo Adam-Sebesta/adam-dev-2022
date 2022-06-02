@@ -5,14 +5,14 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-  css: ["@/assets/style/main.sass"],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        sass: {
-          additionalData: '@import "@/assets/style/_variables.sass"',
-        },
-      },
-    },
-  },
+  css: ["@/assets/style/main.scss", "@/assets/style/_variables.scss"],
+  // vite: {
+  //   css: {
+  //     preprocessorOptions: {
+  //       scss: {
+  //         additionalData: '@import "@/assets/style/_variables.scss"',
+  //       },
+  //     },
+  // },
+  // },
 });

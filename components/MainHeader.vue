@@ -32,44 +32,50 @@ const links: HeaderLink[] = [
   },
 ];
 </script>
-<style lang="sass">
-header
-  width: calc(100% - 6rem)
-  height: 70px
-  position: absolute
-  top: 0
-  padding: 0 3rem
-  display: flex
-  justify-content: space-between
-  align-items: center
-  .header-left
-    display: flex
-    align-items: center
-    color: $white-base
-  .header-right
-    display: flex
-    justify-content: space-between
-    align-items: center
-    a
-      font-weight: 500
-      font-size: 13px
-      line-height: 28px
-      color: $white-base
-      text-decoration: none
-      padding: 5px
-      margin: 10px
-      position: relative
-      &:first-of-type
-        margin-left: 0
-      &:last-of-type
-        margin-right: 0
-      &.dot::before
-        content: ''
-        width: 10px
-        top: 35%
-        margin-right: 7px
-        display: inline-block
-        height: 10px
-        background: $yellow-base
-        border-radius: 100%
+<style lang="scss">
+header {
+  width: calc(100% - var(--page-margin) * 2);
+  height: 70px;
+  position: absolute;
+  top: 0;
+  padding: 0 var(--page-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-left {
+    display: flex;
+    align-items: center;
+    color: var(--white-01);
+    font-size: var(--text-sm);
+  }
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-size: var(--text-sm);
+      color: var(--white-01);
+      text-decoration: none;
+      padding: var(--space-xxs);
+      margin: var(--space-xs);
+      position: relative;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &.dot::before {
+        content: "";
+        width: 10px;
+        top: 35%;
+        margin-right: 7px;
+        display: inline-block;
+        height: 10px;
+        background: var(--yellow-main);
+        border-radius: 100%;
+      }
+    }
+  }
+}
 </style>

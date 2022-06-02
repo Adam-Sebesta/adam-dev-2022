@@ -20,6 +20,7 @@
           </div>
           <div class="stack">{{ v.stack.join(" / ") }}</div>
         </div>
+        <ProjectsDivider />
       </nuxt-link>
     </template>
   </div>
@@ -33,40 +34,50 @@ const maxProjects = computed((): Number => {
   return seeMoreClicked ? 100 : 4;
 });
 </script>
-<style lang="sass">
-.projects
-  display: flex
-  flex-direction: column
-  min-height: 100vh
-  padding-top: 70px
-  backgrond: light-grey
-  .projects-header
-    display: flex
-    color: $white-base
-    padding: 20% 10% 3% 10%
-    height: 50%
-    width: 100%
-    background: black
-    .projects-header-text
-      display: flex
-      flex-direction: column
-      align-items: end
-      p
-        margin: 0
-        font-size: 1.5vw
-        font-weight: 300
-  .project
-    margin: 4rem 10%
-    color: black
-    h5
-      font-size: 3.5vw
-      line-height: 2.5vw
-    &.first
-      margin-top: 8rem !important
-    .project-lower
-      display: flex
-      justify-content: flex-end
-      font-size: 0.75vw
-      .stack
-        margin-left: 5rem
+<style lang="scss">
+.projects {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--white-01);
+  .projects-header {
+    display: flex;
+    color: var(--white-pure);
+    padding: var(--space-xxxl) var(--space-xl) var(--space-sm) var(--space-xl);
+    height: 50%;
+    width: calc(100 - var(--space-xxl) * 2);
+    background: black;
+    .projects-header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      p {
+        margin: 0;
+        font-size: 1.5vw;
+        font-weight: 300;
+      }
+    }
+  }
+  .project {
+    margin: var(--space-xxl) var(--space-xl) var(--space-lg) var(--space-xl);
+    width: calc(100% - var(--space-xl) * 2);
+    color: black;
+    h5 {
+      font-size: 3.5vw;
+      line-height: 2.5vw;
+    }
+    &.first {
+      // margin-top: calc(var(--space-lg) +);
+    }
+    .project-lower {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 0.75vw;
+      .stack {
+        margin-left: 5rem;
+      }
+    }
+  }
+}
 </style>

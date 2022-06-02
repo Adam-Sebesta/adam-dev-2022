@@ -1,0 +1,87 @@
+//fonts
+@font-face {
+  font-family: "Baunk";
+  src: url("~/assets/fonts/Baunk.ttf") /* IE9 Compat Mode */;
+  src: url("~/assets/fonts/Baunk.otf") /* IE9 Compat Mode */;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SplineSansMono";
+  src: url("~/assets/fonts/SplineSansMono-Light.ttf") /* IE9 Compat Mode */;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SplineSansMono";
+  src: url("~/assets/fonts/SplineSansMono-Regular.ttf") /* IE9 Compat Mode */;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SplineSansMono";
+  src: url("~/assets/fonts/SplineSansMono-Medium.ttf") /* IE9 Compat Mode */;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SplineSansMono";
+  src: url("~/assets/fonts/SplineSansMono-SemiBold.ttf") /* IE9 Compat Mode */;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SplineSansMono";
+  src: url("~/assets/fonts/SplineSansMono-Bold.ttf") /* IE9 Compat Mode */;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--text-base-size);
+  overflow-x: hidden;
+}
+.page {
+  padding: 0%;
+  div {
+    max-width: 1500px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font-family);
+  margin: 0;
+  line-height: 0.9;
+}
+h1 {
+  font-size: var(--text-xxxl);
+}
+
+h2 {
+  font-size: var(--text-xxl);
+}
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+h5 {
+  font-size: var(--text-md);
+}
+
+p,
+span {
+}

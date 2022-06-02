@@ -1,0 +1,88 @@
+$breakpoints: (
+  "sm": 560px,
+  "md": 1279px,
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+:root {
+  // fonts
+  --body-font-family: SplineSansMono, sans-serif;
+  --heading-font-family: Baunk;
+
+  // colors
+  --white-pure: #ffffff;
+  --white-01: #f4f8fa;
+  --yellow-main: #ffc702;
+  --blue-01: #4f95ff;
+  --blue-02: #002ecf;
+  --blue-03: #050454;
+  --black-pure: #000;
+  --black-01: #20202d;
+  --black-02: #1e1e27;
+  --black-03: #16161b;
+  --black-04: #111113;
+  --blue-gradient-down: linear-gradient(180deg, #002ecf 0%, #4f95ff 100%);
+
+  //margins
+  --page-margin: 2.5vw;
+  // body font size
+  --text-base-size: 1.5em;
+
+  // type scale
+  --text-scale-ratio: 1.43;
+  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(
+    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+
+  //spacing
+  --space-unit: 1.5em;
+  --space-xxxxs: calc(0.125 * var(--space-unit));
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs: calc(0.375 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+  --space-xxxl: calc(8.5 * var(--space-unit));
+  --space-xxxxl: calc(13.75 * var(--space-unit));
+}
+
+@supports (--css: variables) {
+  :root {
+    @include breakpoint(md) {
+      --space-unit: 1.25em;
+      --text-base-size: 1.25em;
+      --text-scale-ratio: 1.43;
+      --page-margin: 4.5vw;
+    }
+    @include breakpoint(sm) {
+      --space-unit: 1em;
+      --text-base-size: 1em;
+      --text-scale-ratio: 1.25;
+      --page-margin: 3.125vw;
+    }
+  }
+}
