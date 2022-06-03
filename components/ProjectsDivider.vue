@@ -12,15 +12,16 @@
       width="133"
       height="1"
       transform="matrix(1 0 0 -1 -85 8)"
-      fill="#111113"
+      :fill="color"
       class="projectDividerline"
     />
-    <path d="M1699 8H1711V0L1699 7V8Z" fill="#111113" />
+    <path d="M1699 8H1711V0L1699 7V8Z" :fill="color" />
+    <!-- #111113 -->
     <rect
       width="8"
       height="8"
       transform="matrix(1 0 0 -1 1711 8)"
-      fill="#111113"
+      :fill="color"
     />
   </svg>
 </template>
