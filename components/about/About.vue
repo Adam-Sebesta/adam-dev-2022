@@ -1,24 +1,22 @@
 <template>
-  <MainHeader />
   <div class="page about">
     <div class="text-container">
       <div class="upper-text">
         <AboutHeader />
       </div>
       <div class="lower-text">
-        <div class="lower-text-left">
+        <div class="lower-text-left subtitle-40-medium">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          impedit in cupiditate at sed dolore placeat excepturi error inventore
-          aspernatur deserunt aliquam ad necessitatibus cumque consequuntur
-          rerum, nisi, nobis nulla.
+          impedit in.
         </div>
-        <div class="lower-text-right">
+        <div class="lower-text-right text-16-regular">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel
           ex eos, aperiam nulla animi omnis nobis <br /><br />
           vero dolorum at dolores, beatae ea autem nisi nihil molestias veniam.
           Ut, harum!
         </div>
       </div>
+      <AboutLetsTalk />
     </div>
   </div>
 </template>
@@ -28,6 +26,7 @@
 
 .about {
   display: flex;
+  position: relative;
   flex-direction: column;
   min-height: 100vh;
   padding: var(--space-lg) var(--space-xl) 0 var(--space-xl);
@@ -40,19 +39,10 @@
       flex-direction: column;
       align-items: flex-end;
     }
-    //   h3 {
-    //     display: flex;
-    //     font-size: var(--text-sm);
-    //     line-height: 6.25vw;
-    //   }
-    // p {
-    //   text-align: right;
-    //   font-size: var(--text-sm);
-    // }
     .lower-text {
       display: flex;
       justify-content: space-between;
-      margin: var(--space-md) 0;
+      margin-top: var(--space-md);
       div {
         max-width: 600px;
         min-width: 180px;
@@ -62,15 +52,10 @@
         }
       }
       .lower-text-left {
-        font-size: var(--text-sm);
-        line-height: 1.5;
         color: var(--black-03);
-        margin: var(--space-lg) 0;
+        margin: var(--space-md) 0;
       }
       .lower-text-right {
-        font-size: var(--text-xs);
-        line-height: 200%;
-        font-weight: 300;
         color: var(--black-02);
         margin: var(--space-xxl) 0;
       }

@@ -27,25 +27,44 @@ $breakpoints: (
   // colors
   --white-pure: #ffffff;
   --white-01: #f4f8fa;
-  --yellow-main: #ffc702;
+  --white-02: #e3e9ec;
+  --grey-01: ##bcc6cb;
+  --grey-02: #717c82;
+  --grey-03: #2f3335;
+  --yellow-main: #efff31;
   --blue-01: #4f95ff;
   --blue-02: #002ecf;
   --blue-03: #050454;
   --black-pure: #000;
   --black-01: #20202d;
-  --black-02: #1e1e27;
-  --black-03: #16161b;
+  --black-02: #1a1a1d;
+  --black-03: #141416;
   --black-04: #111113;
+  --blue-gradient-up: linear-gradient(180deg, #4f95ff 0%, #002ecf 100%);
   --blue-gradient-down: linear-gradient(180deg, #002ecf 0%, #4f95ff 100%);
+  --blue-gradieht-left: linear-gradient(90deg, #4f95ff 0%, #002ecf 100%);
+  --blue-gradient-right: linear-gradient(90deg, #002ecf 0%, #4f95ff 100%);
+  --blue-gradient-24: linear-gradient(
+    90deg,
+    rgba(79, 149, 255, 0.24) 0%,
+    rgba(0, 46, 207, 0.24) 19.79%,
+    rgba(17, 17, 19, 0.24) 62.5%
+  );
+  --blue-gradient-48: linear-gradient(
+    90deg,
+    rgba(79, 149, 255, 0.48) 0%,
+    rgba(0, 46, 207, 0.48) 19.79%,
+    rgba(17, 17, 19, 0.48) 62.5%
+  );
 
   //margins
   --page-margin: 2.5vw;
   // body font size
-  --text-base-size: 1.5em;
+  --text-base-size: 1.5vw;
 
   // type scale
   --text-scale-ratio: 1.43;
-  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-xs: calc((1.5vw / var(--text-scale-ratio)) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
   --text-md: calc(
     var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
@@ -74,13 +93,13 @@ $breakpoints: (
   :root {
     @include breakpoint(md) {
       --space-unit: 1.25em;
-      --text-base-size: 1.25em;
+      --text-base-size: 1.25vw;
       --text-scale-ratio: 1.43;
       --page-margin: 4.5vw;
     }
     @include breakpoint(sm) {
       --space-unit: 1em;
-      --text-base-size: 1em;
+      --text-base-size: 1vw;
       --text-scale-ratio: 1.25;
       --page-margin: 3.125vw;
     }
