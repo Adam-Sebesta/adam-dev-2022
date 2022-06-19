@@ -41,23 +41,23 @@
     }
     .lower-text {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       margin-top: var(--space-md);
       div {
-        max-width: 600px;
         min-width: 180px;
-
         @include breakpoint("md") {
           max-width: 400px;
         }
       }
       .lower-text-left {
+        max-width: 50%;
         color: var(--black-03);
         margin: var(--space-md) 0;
       }
       .lower-text-right {
+        // max-width: 40%;
         color: var(--black-02);
-        margin: var(--space-xxl) 0;
+        margin: var(--space-xxl) 0 var(--space-xxl) 11%;
       }
     }
   }

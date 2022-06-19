@@ -27,10 +27,8 @@
 </template>
 <style lang="scss">
 .projectDivider {
-  width: 120%;
-  position: absolute;
-  bottom: 0%;
-  left: -26%;
+  width: calc(100% + var(--space-xl));
+  transform: translateX(calc(var(--space-xl * -1)));
 }
 .projectDividerline {
   width: 105%;

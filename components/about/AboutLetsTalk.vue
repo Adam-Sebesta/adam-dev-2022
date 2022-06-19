@@ -23,8 +23,8 @@
 <script setup lang="ts"></script>
 <style lang="scss">
 #aboutLetsTalk {
-  width: 120%;
-  transform: translateX(-16.75%);
-  margin: var(--space-lg);
+  width: calc(100% + var(--space-xl));
+  transform: translateX(calc(var(--space-xl) * -1));
+  margin-bottom: var(--space-sm);
 }
 </style>
