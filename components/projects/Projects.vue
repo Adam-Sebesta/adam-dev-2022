@@ -20,7 +20,7 @@
             }}</span>
           </div>
         </div>
-        <ProjectsDivider />
+        <ProjectsDivider color="var(--black-03)" />
       </nuxt-link>
     </template>
   </div>

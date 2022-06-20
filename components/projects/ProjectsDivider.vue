@@ -5,32 +5,29 @@
     viewBox="0 0 1719 8"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    class="projectDivider"
+    id="projectDivider"
   >
     <rect
-      opacity="0.64"
-      width="133"
-      height="1"
-      transform="matrix(1 0 0 -1 -85 8)"
-      :fill="color"
-      class="projectDividerline"
-    />
-    <path d="M1699 8H1711V0L1699 7V8Z" :fill="color" />
-    <!-- #111113 -->
-    <rect
-      width="8"
+      width="56"
       height="8"
-      transform="matrix(1 0 0 -1 1711 8)"
+      transform="matrix(1 0 0 -1 1663 8)"
       :fill="color"
     />
+    <path d="M1651 8H1663V0L1651 7V8Z" :fill="color" />
+    <rect y="7" width="1719" height="1" :fill="color" />
   </svg>
 </template>
+<script setup lang="ts">
+const props = defineProps({ color: String });
+</script>
 <style lang="scss">
-.projectDivider {
+#projectDivider {
   width: calc(100% + var(--space-xl));
-  transform: translateX(calc(var(--space-xl * -1)));
+  transform: translateX(calc(var(--space-xl) * -1));
+  path {
+    transform: translateX(1px);
+  }
 }
 .projectDividerline {
-  width: 105%;
 }
 </style>
