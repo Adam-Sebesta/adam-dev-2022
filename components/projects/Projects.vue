@@ -1,13 +1,11 @@
 <template>
   <div class="page projects">
     <ProjectsHeader />
-    <template v-for="(v, k, i) in projects">
+    <template v-for="(v, k, i) in projects" class="projects-wrapper">
       <nuxt-link
         v-if="i < maxProjects"
         :to="v.to"
         :class="'project' + (i === 0 ? ' first' : '')"
-        @mouseover="hover = i"
-        @mouseleave="hover = -1"
       >
         <h4>{{ v.title }}</h4>
         <div class="project-lower">
@@ -22,19 +20,22 @@
             }}</span>
           </div>
         </div>
-        <ProjectsDivider color="var(--black-03)" :hover="hover == i" />
+        <ProjectsDivider color="var(--black-03)" />
       </nuxt-link>
     </template>
+    <ProjectsLoadOther
+      @loadMore="loadMoreClicked = true"
+      :total="Object.values(projects).length"
+    />
   </div>
 </template>
 <script setup lang="ts">
 import { IProjectOb } from "~~/types/projects";
 import Projects from "../../config/projects";
 const projects: IProjectOb = Projects;
-const seeMoreClicked: Boolean = false;
-const hover = ref(-1);
+const loadMoreClicked = ref(false);
 const maxProjects = computed((): Number => {
-  return seeMoreClicked ? 100 : 4;
+  return loadMoreClicked.value ? 100 : 4;
 });
 </script>
 <style lang="scss">
@@ -62,9 +63,11 @@ const maxProjects = computed((): Number => {
     }
     .project-lower {
       display: flex;
-      justify-content: flex-end;
+      width: 50%;
+      justify-content: space-between;
+      margin-left: auto;
       .stack {
-        margin-left: var(--space-xl);
+        margin-left: var(--space-xs);
       }
     }
   }

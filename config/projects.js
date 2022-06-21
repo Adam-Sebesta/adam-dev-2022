@@ -3,7 +3,7 @@ export default {
     textColor: "black",
     desc: `Halotrade was a pilot build of an enterprise-grade supply chain application. I was the lead developer personally responsible for Infrastructure Planning, Full-Stack Development, and DevOps. This project not only challenged my macro strategizing while collaborating with the product manager, it was my first globally distributed application using Microsoft Azure. `,
     title: "Halotrade",
-    stack: ["Azure", "Nuxt.js", "Node"],
+    stack: ["Nuxt.js", "Azure", "Node", "NoSql"],
     img: "halotrade_prev.jpg",
     length: "short",
     sector: "Finance",
