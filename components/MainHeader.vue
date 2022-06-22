@@ -5,11 +5,11 @@
       <p class="text-16-medium">Adam Sebesta</p>
     </div>
     <div class="header-right">
-      <nuxt-link
+      <a
         :class="(l.dot ? 'dot' : '') + ' text-16-medium'"
         v-for="l in links"
-        :to="l.src"
-        >{{ l.text }}</nuxt-link
+        :href="l.hash"
+        >{{ l.text }}</a
       >
     </div>
   </header>
@@ -20,17 +20,17 @@ import { HeaderLink } from "types/headerlink";
 
 const links: HeaderLink[] = [
   {
-    src: "#About",
+    hash: "#About",
     text: "About",
   },
 
   {
-    src: "#Portfolio",
+    hash: "#Portfolio",
     text: "Portfolio",
   },
   {
-    src: "#Contact",
-    text: "Contact",
+    hash: "#Connect",
+    text: "Connect",
     dot: true,
   },
 ];

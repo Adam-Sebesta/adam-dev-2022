@@ -1,5 +1,5 @@
 export interface HeaderLink {
-  src: string;
+  hash: string;
   text: string;
   dot?: boolean;
 }

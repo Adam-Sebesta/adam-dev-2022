@@ -1,5 +1,5 @@
 <template>
-  <div class="page projects">
+  <div id="Portfolio" class="page projects">
     <ProjectsHeader />
     <template v-for="(v, k, i) in projects" class="projects-wrapper">
       <nuxt-link
@@ -63,7 +63,7 @@ const maxProjects = computed((): Number => {
     }
     .project-lower {
       display: flex;
-      width: 50%;
+      width: 35%;
       justify-content: space-between;
       margin-left: auto;
       .stack {

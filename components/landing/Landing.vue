@@ -11,7 +11,7 @@
         </p>
       </div>
     </div>
-    <div id="landing-3d"></div>
+    <LandingIllus />
   </div>
 </template>
 <script setup lang="ts"></script>
@@ -39,11 +39,6 @@
         max-width: 275px;
       }
     }
-  }
-  #landing-3d {
-    width: 100%;
-    height: 75vh;
-    border: 1px solid black;
   }
 }
 </style>
