@@ -4,6 +4,5 @@
     <About />
     <Projects />
     <Connect />
-    <MainFooter />
   </div>
 </template>

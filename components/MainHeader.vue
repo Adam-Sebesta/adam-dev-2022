@@ -8,7 +8,7 @@
       <a
         :class="(l.dot ? 'dot' : '') + ' text-16-medium'"
         v-for="l in links"
-        :href="l.hash"
+        @click="scrollTo(l.hash)"
         >{{ l.text }}</a
       >
     </div>
@@ -34,10 +34,18 @@ const links: HeaderLink[] = [
     dot: true,
   },
 ];
+const scrollTo = (hash: string): void => {
+  document.querySelector(hash).scrollIntoView({
+    behavior: "smooth",
+  });
+};
 </script>
 <style lang="scss">
+.header-wrapper {
+  width: 100%;
+}
 header {
-  width: calc(100% - var(--page-margin) * 2);
+  //  TODO: fix width
   height: 70px;
   position: absolute;
   top: 0;
@@ -59,6 +67,7 @@ header {
       text-decoration: none;
       padding: var(--space-xxs);
       margin: var(--space-xs);
+      cursor: pointer;
       position: relative;
       &:first-of-type {
         margin-left: 0;
