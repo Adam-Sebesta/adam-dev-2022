@@ -28,9 +28,15 @@
   .text-container {
     color: var(--white-01);
     text-align: center;
-    margin: 4em 0;
+    margin: var(--space-xl) 0;
+    @include breakpoint("sm") {
+      margin: var(--space-xxxl) 0;
+    }
     h3 {
       text-shadow: -5px -2px #050454;
+      @include breakpoint("md") {
+        text-shadow: -3px -1px #050454;
+      }
     }
     p {
       max-width: 492px;
@@ -40,6 +46,9 @@
       }
       @include breakpoint("md") {
         max-width: 296px;
+      }
+      @include breakpoint("sm") {
+        margin: var(--space-sm) auto;
       }
     }
   }

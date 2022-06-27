@@ -74,15 +74,21 @@ h2 {
 }
 h3 {
   font-size: clamp(16px, var(--text-xl), 88px);
-  @media screen and (max-width: 1279px) and (min-width: 562px) {
+  @media screen and (max-width: 1279px) {
     font-size: clamp(40px, var(--text-xl), 70px);
+  }
+  @media screen and (max-width: 561px) {
+    font-size: clamp(35px, var(--text-xl), 70px);
   }
 }
 
 h4 {
   font-size: clamp(16px, var(--text-lg), 80px);
-  @media screen and (max-width: 1279px) and (min-width: 562px) {
+  @media screen and (max-width: 1279px) {
     font-size: clamp(30px, var(--text-lg), 60px);
+  }
+  @media screen and (max-width: 561px) {
+    font-size: clamp(20px, var(--text-xl), 70px);
   }
 }
 h5 {
@@ -143,7 +149,7 @@ h5 {
   font-weight: 500;
   font-size: clamp(16px, var(--text-sm), 20px);
   line-height: 180%;
-  @media screen and (max-width: 1279px) and (min-width: 562px) {
+  @media screen and (max-width: 1279px) {
     font-size: clamp(12px, var(--text-sm), 20px);
   }
 }

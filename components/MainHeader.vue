@@ -1,7 +1,7 @@
 <template>
   <header class="header-wrapper">
     <div class="header-left">
-      <img src="logo-no-text" alt="" />
+      <img src="static/logo/logo-no-text.png" alt="" />
       <p class="text2-medium">Adam Sebesta</p>
     </div>
     <div class="header-right">
@@ -11,6 +11,7 @@
         @click="scrollTo(l.hash)"
         >{{ l.text }}</a
       >
+      <MainHeaderMobileNavButton />
     </div>
   </header>
 </template>
@@ -57,6 +58,14 @@ header {
     display: flex;
     align-items: center;
     color: var(--white-01);
+    img {
+      width: 33px;
+    }
+    @media screen and (max-width: 560px) {
+      p {
+        display: none;
+      }
+    }
   }
   .header-right {
     display: flex;
@@ -84,6 +93,9 @@ header {
         height: 10px;
         background: var(--yellow-main);
         border-radius: 100%;
+      }
+      @media screen and (max-width: 560px) {
+        display: none;
       }
     }
   }
