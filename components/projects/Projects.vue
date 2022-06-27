@@ -1,21 +1,21 @@
 <template>
   <div id="Portfolio" class="page projects">
     <ProjectsHeader />
-    <template v-for="(v, k, i) in projects" class="projects-wrapper">
+    <template v-for="(v, k, i) in projects">
       <nuxt-link
         v-if="i < maxProjects"
         :to="v.to"
         :class="'project' + (i === 0 ? ' first' : '')"
       >
-        <h4>{{ v.title }}</h4>
+        <h3>{{ v.title }}</h3>
         <div class="project-lower">
           <div>
-            <span class="text-16-medium uppercase">{{
+            <span class="text2-medium uppercase">{{
               v.year + " // " + v.sector
             }}</span>
           </div>
           <div class="stack">
-            <span class="text-16-medium uppercase">{{
+            <span class="text2-medium uppercase">{{
               v.stack.join(" // ")
             }}</span>
           </div>
@@ -23,11 +23,11 @@
         <ProjectsDivider color="var(--black-03)" />
       </nuxt-link>
     </template>
-    <ProjectsLoadOther
-      @loadMore="loadMoreClicked = true"
-      :total="Object.values(projects).length"
-    />
   </div>
+  <ProjectsLoadOther
+    @loadMore="loadMoreClicked = true"
+    :total="Object.values(projects).length"
+  />
 </template>
 <script setup lang="ts">
 import { IProjectOb } from "~~/types/projects";
@@ -45,13 +45,26 @@ const maxProjects = computed((): Number => {
   min-height: 100vh;
   width: 100%;
   background: var(--white-01);
-
+  position: relative;
+  &::before {
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background: var(--white-01);
+    top: 3px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
   .project {
     padding: 0 var(--space-xl) 0 var(--space-xl);
-    margin: var(--space-xxl) 0 var(--space-sm) 0;
+    margin: var(--space-xxxl) 0 var(--space-sm) 0;
     width: 100%;
     color: black;
     position: relative;
+    h3 {
+      transform: translateY(10px);
+    }
     &:hover {
       .active {
         transform: translateX(0%);
@@ -61,13 +74,22 @@ const maxProjects = computed((): Number => {
     &.first {
       // margin-top: calc(var(--space-lg) +);
     }
+    @media screen and (max-width: 1297px) {
+      padding: 0 var(--space-xxl) 0 var(--space-xxl);
+    }
     .project-lower {
       display: flex;
       width: 35%;
       justify-content: space-between;
-      margin-left: auto;
+      margin: 0 0 calc(var(--space-sm) + 3px) auto;
       .stack {
         margin-left: var(--space-xs);
+      }
+      @media screen and (max-width: 1297px) {
+        flex-direction: column;
+        .stack {
+          margin-left: 0;
+        }
       }
     }
   }

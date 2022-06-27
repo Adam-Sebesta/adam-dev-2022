@@ -4,7 +4,7 @@
       <ProjectsHeaderSphereIcon />
       <div class="projects-header-text">
         <h2>Projects</h2>
-        <p class="subtitle-32-medium">2020 // 2022</p>
+        <p class="sub2-medium">2020 // 2022</p>
       </div>
     </div>
   </div>
@@ -18,6 +18,19 @@
   height: 85vh;
   width: 100%;
   background: black;
+  position: relative;
+  @media screen and (max-width: 1279px) {
+    height: 30vh;
+  }
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--black-03);
+    bottom: calc(var(--space-xxxxs) * -1);
+    left: 0;
+    position: absolute;
+  }
   .projects-header-text-wrapper {
     display: flex;
     flex-direction: column;
@@ -28,8 +41,11 @@
     background: var(--blue-gradient-24);
     position: relative;
     .projects-header-text {
-      margin: 0 var(--space-xl) var(--space-sm) 0;
+      margin: 0 var(--space-xl) var(--space-md) 0;
       text-align: right;
+      @media screen and (max-width: 1279px) {
+        margin: 0 var(--space-xxl) var(--space-md) 0;
+      }
     }
   }
 }

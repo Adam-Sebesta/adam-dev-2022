@@ -44,12 +44,19 @@
   display: flex;
   justify-content: flex-end;
   margin-right: var(--space-xl);
+  @media screen and (max-width: 1297px) {
+    margin-right: var(--space-xxl);
+  }
   height: 20vh;
   a {
     position: absolute;
     right: var(--space-xl);
     width: calc((100% - (var(--space-xl) * 2)) * 0.35);
     cursor: pointer;
+    @media screen and (max-width: 1297px) {
+      right: var(--space-xxl);
+      width: calc((100% - (var(--space-xxl) * 2)) * 0.35);
+    }
     #leaveMeAMessage {
       position: relative;
       width: 100%;
@@ -62,6 +69,9 @@
     position: absolute;
     right: var(--space-xl);
     z-index: 0;
+    @media screen and (max-width: 1297px) {
+      right: var(--space-xxl);
+    }
   }
 }
 </style>

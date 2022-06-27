@@ -5,15 +5,17 @@
         <AboutHeader />
       </div>
       <div class="lower-text">
-        <div class="lower-text-left subtitle-40-medium">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          impedit in.
+        <div class="lower-text-left sub1-medium">
+          Shoot me an email effort made was a lot, we need to think.
         </div>
-        <div class="lower-text-right text-16-regular">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel
-          ex eos, aperiam nulla animi omnis nobis <br /><br />
-          vero dolorum at dolores, beatae ea autem nisi nihil molestias veniam.
-          Ut, harum!
+        <div class="lower-text-right text2-regular">
+          Shoot me an email effort made was a lot, we need to think big start
+          small and scale fast to energize our clie proceduralize. We should
+          leverage existing asserts that ladder.
+          <br /><br />
+          Shoot me an email effort made was a lot, we need to think big start
+          small and scale fast to energize our clie proceduralize. We should
+          leverage existing asserts that ladder.
         </div>
       </div>
       <AboutLetsTalk />
@@ -31,6 +33,19 @@
   min-height: 100vh;
   padding: var(--space-lg) var(--space-xl) 0 var(--space-xl);
   background: var(--white-01);
+  @include breakpoint("md") {
+    min-height: unset;
+    padding: var(--space-lg) var(--space-xxl) 0 var(--space-xxl);
+  }
+  &::before {
+    content: "";
+    height: 1px;
+    width: 100vw;
+    background-color: var(--blue-01);
+    top: var(--space-xxxxs);
+    left: 0;
+    position: absolute;
+  }
   .text-container {
     color: black;
     margin: var(--space-lg) 0;
@@ -38,16 +53,17 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      @include breakpoint("md") {
+        align-items: flex-start;
+      }
     }
     .lower-text {
       display: flex;
       // justify-content: space-between;
       margin-top: var(--space-md);
+
       div {
         min-width: 180px;
-        @include breakpoint("md") {
-          max-width: 400px;
-        }
       }
       .lower-text-left {
         max-width: 50%;
@@ -58,6 +74,17 @@
         // max-width: 40%;
         color: var(--black-02);
         margin: var(--space-xxl) 0 var(--space-xxl) 11%;
+      }
+      @include breakpoint("md") {
+        flex-direction: column;
+        .lower-text-left {
+          max-width: 75vw;
+          margin: var(--space-lg) 0 0 0;
+        }
+        .lower-text-right {
+          max-width: 75vw;
+          margin: var(--space-xl) 0 var(--space-xxl) 0;
+        }
       }
     }
   }

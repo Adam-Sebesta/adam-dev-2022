@@ -50,7 +50,7 @@ export default {
     textColor: "black",
     desc: `An MVP android build of a security focused travel/document sharing application. I was the lead developer responsible for Infrastructure Planning, Full-Stack Development, and DevOps. Leveraging Google Firebase Authentication, Serverless Functions, and Storage, we were able to deploy a first build to testers. The app is still currently being tested.`,
     title: "Roam",
-    stack: ["NativeScript", "Android", "Firebase"],
+    stack: ["NsVue", "Android", "Firebase"],
     img: "roam_prev.jpg",
     length: "tall",
     sector: "Travel",

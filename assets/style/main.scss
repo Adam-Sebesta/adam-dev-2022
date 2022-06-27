@@ -47,6 +47,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--text-base-size);
   overflow-x: hidden;
+  background-color: var(--white-01);
 }
 .page {
   padding: 0%;
@@ -65,18 +66,24 @@ h5 {
   line-height: 0.9;
 }
 h1 {
-  font-size: clamp(16px, var(--text-xxxl), 120px);
+  font-size: clamp(16px, var(--text-xxxl), 160px);
 }
 
 h2 {
-  font-size: clamp(16px, var(--text-xxl), 108px);
+  font-size: clamp(16px, var(--text-xxl), 120px);
 }
 h3 {
   font-size: clamp(16px, var(--text-xl), 88px);
+  @media screen and (max-width: 1279px) and (min-width: 562px) {
+    font-size: clamp(40px, var(--text-xl), 70px);
+  }
 }
 
 h4 {
-  font-size: clamp(16px, var(--text-lg), 40px);
+  font-size: clamp(16px, var(--text-lg), 80px);
+  @media screen and (max-width: 1279px) and (min-width: 562px) {
+    font-size: clamp(30px, var(--text-lg), 60px);
+  }
 }
 h5 {
   font-size: var(--text-md);
@@ -107,75 +114,99 @@ h5 {
   font-weight: 700;
 }
 
-.subtitle-40-medium {
+.sub1-medium {
   font-weight: 500;
   letter-spacing: -0.02em;
   font-size: clamp(16px, var(--text-lg), 40px);
   line-height: 120%;
 }
 
-.subtitle-32-light {
+.sub2-light {
   font-weight: 300;
   font-size: clamp(16px, var(--text-md), 32px);
   line-height: 125%;
 }
 
-.subtitle-32-medium {
+.sub2-medium {
   font-weight: 500;
   font-size: clamp(16px, var(--text-md), 32px);
   line-height: 125%;
 }
 
-.subtitle-32-regular {
+.sub2-regular {
   font-weight: 400;
   font-size: clamp(16px, var(--text-md), 32px);
   line-height: 125%;
 }
 
-.subtitle-20-medium {
+.sub3-medium {
   font-weight: 500;
   font-size: clamp(16px, var(--text-sm), 20px);
   line-height: 180%;
+  @media screen and (max-width: 1279px) and (min-width: 562px) {
+    font-size: clamp(12px, var(--text-sm), 20px);
+  }
 }
 
-.text-24-semibold {
+.text1-semibold {
   font-weight: 600;
   font-size: clamp(16px, calc(var(--text-md) - 4px), 24px);
   line-height: 133%;
+  @media screen and (max-width: 1279px) {
+    font-size: 20px;
+  }
 }
 
-.text-16-light {
+.text2-light {
   font-weight: 300;
   font-size: 16px;
   line-height: 175%;
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+  }
 }
 
-.text-16-regular {
+.text2-regular {
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+  }
 }
 
-.text-16-medium {
+.text2-medium {
   font-weight: 500;
   font-size: 16px;
   line-height: 175%;
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+  }
 }
 
-.text-16-semibold {
+.text2-semibold {
   font-weight: 600;
   font-size: 16px;
   line-height: 175%;
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+  }
 }
 
 .button-medium {
   font-weight: 500;
   font-size: clamp(16px, var(--text-sm), 20px);
   line-height: 160%;
+  @media screen and (max-width: 1279px) {
+    font-size: clamp(14px, var(--text-sm), 20px);
+  }
 }
 
 .button-bold {
   font-weight: 700;
   font-size: clamp(16px, var(--text-sm), 20px);
   line-height: 160%;
+  @media screen and (max-width: 1279px) {
+    font-size: clamp(14px, var(--text-sm), 20px);
+  }
 }

@@ -95,13 +95,13 @@ $breakpoints: (
       --space-unit: 1.25em;
       --text-base-size: 1.25vw;
       --text-scale-ratio: 1.43;
-      --page-margin: 4.5vw;
+      --page-margin: 3.125vw;
     }
     @include breakpoint(sm) {
       --space-unit: 1em;
       --text-base-size: 1vw;
       --text-scale-ratio: 1.25;
-      --page-margin: 3.125vw;
+      --page-margin: 4.5vw;
     }
   }
 }

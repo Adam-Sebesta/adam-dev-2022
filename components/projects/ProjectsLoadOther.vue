@@ -13,7 +13,7 @@
         <path d="M0 0H12V8L0 1V0Z" fill="#141416" />
       </svg>
 
-      <p class="text-16-medium uppercase">of total //</p>
+      <p class="text2-medium uppercase">of total //</p>
       <h2>{{ total }}</h2>
     </div>
     <div class="project-load-other-svg-wrapper">
@@ -55,7 +55,7 @@ const props = defineProps({ total: Number });
 <style lang="scss">
 .projects-load-other {
   width: 100%;
-
+  background-color: var(--white-01);
   .total-square {
     display: flex;
     min-height: 20vh;
@@ -67,6 +67,11 @@ const props = defineProps({ total: Number });
     height: var(--space-xl);
     padding: var(--space-sm);
     border: 1px solid var(--black-03);
+    @media screen and (max-width: 1297px) {
+      width: calc((100% - (var(--space-xxl) * 2)) * 0.35);
+      margin: var(--space-lg) var(--space-xxl) 1px auto;
+      min-height: 10vh;
+    }
     h2 {
       text-align: right;
       line-height: 56%;
@@ -89,6 +94,10 @@ const props = defineProps({ total: Number });
       // position: absolute;
       right: 0;
       margin: var(--space-xxxxs) var(--space-xl) 0 0;
+      @media screen and (max-width: 1297px) {
+        width: calc((100% - (var(--space-xxl) * 2)) * 0.35);
+        margin: var(--space-xxxxs) var(--space-xxl) 0 0;
+      }
     }
     .load-other-divider {
       width: 100%;

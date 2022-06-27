@@ -1,10 +1,10 @@
 <template>
   <footer class="footer-wrapper">
     <div class="footer-left">
-      <p class="text-16-medium uppercase">site ver // 06.2022</p>
+      <p class="text2-medium uppercase">site ver // 06.2022</p>
     </div>
     <div class="footer-right">
-      <p class="text-16-medium">DESIGN // Gaclav</p>
+      <p class="text2-medium">DESIGN // Gaclav</p>
     </div>
   </footer>
 </template>
@@ -19,6 +19,9 @@ footer {
   justify-content: space-between;
   color: var(--grey-02);
   align-items: center;
+  @media screen and (max-width: 1297px) {
+    padding: var(--space-md) var(--space-xxl);
+  }
   .footer-left {
   }
   .footer-right {

@@ -1,11 +1,11 @@
 <template>
   <div class="connect-lower">
     <div class="connect-lower-left">
-      <p class="text-16-regular">© 2022 Adam Sebesta</p>
+      <p class="text2-regular">© 2022 Adam Sebesta</p>
     </div>
     <div class="connect-lower-right">
       <nuxt-link
-        class="text-16-semibold uppercase"
+        class="text2-semibold uppercase"
         v-for="link in links"
         :to="link.link"
       >
@@ -30,6 +30,9 @@ const links: ContactLink[] = [
   justify-content: space-between;
   width: calc(100% - (var(--space-xl) * 2));
   margin: var(--space-xxl) auto var(--space-md) auto;
+  @media screen and (max-width: 1297px) {
+    width: calc(100% - (var(--space-xxl) * 2));
+  }
   .connect-lower-left {
     color: var(--grey-02);
   }

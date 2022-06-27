@@ -58,6 +58,10 @@ const props = defineProps({ color: String });
     left: 0;
     width: calc(100% + var(--space-xl));
     transform: translateX(calc(var(--space-xl) * -1));
+    @media screen and (max-width: 1297px) {
+      width: calc(100% + var(--space-xxl));
+      transform: translateX(calc(var(--space-xxl) * -1));
+    }
     &.active {
       width: 0%;
       transition: 300ms ease-in-out transform;

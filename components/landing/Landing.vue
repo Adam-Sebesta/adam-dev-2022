@@ -5,7 +5,7 @@
       <h3>Full-Stack<br />Development</h3>
 
       <div>
-        <p class="subtitle-20-medium">
+        <p class="sub3-medium">
           Bringing your most creative idea to life with unbonded and undonded
           efficiency.
         </p>
@@ -30,13 +30,16 @@
     text-align: center;
     margin: 4em 0;
     h3 {
-      text-shadow: -7px -5px #050454;
+      text-shadow: -5px -2px #050454;
     }
     p {
       max-width: 492px;
       margin: var(--space-xxs) auto;
       @include breakpoint("sm") {
         max-width: 275px;
+      }
+      @include breakpoint("md") {
+        max-width: 296px;
       }
     }
   }

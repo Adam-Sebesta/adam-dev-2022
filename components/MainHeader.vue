@@ -2,11 +2,11 @@
   <header class="header-wrapper">
     <div class="header-left">
       <img src="logo-no-text" alt="" />
-      <p class="text-16-medium">Adam Sebesta</p>
+      <p class="text2-medium">Adam Sebesta</p>
     </div>
     <div class="header-right">
       <a
-        :class="(l.dot ? 'dot' : '') + ' text-16-medium'"
+        :class="(l.dot ? 'dot' : '') + ' text2-medium'"
         v-for="l in links"
         @click="scrollTo(l.hash)"
         >{{ l.text }}</a
