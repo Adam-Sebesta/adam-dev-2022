@@ -46,6 +46,9 @@
   position: absolute;
   top: var(--space-xl);
   right: var(--space-xl);
+  @media screen and (max-width: 1297px) {
+    width: 17%;
+  }
   #projectsHeaderSphereIcon {
     width: 100%;
     height: 100%;

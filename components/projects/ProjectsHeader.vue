@@ -16,6 +16,7 @@
   color: var(--white-pure);
   // padding: var(--space-xxxl) var(--space-xl) var(--space-sm) var(--space-xl);
   height: 85vh;
+  min-height: 320px;
   width: 100%;
   background: black;
   position: relative;
@@ -44,7 +45,7 @@
       margin: 0 var(--space-xl) var(--space-md) 0;
       text-align: right;
       @media screen and (max-width: 1279px) {
-        margin: 0 var(--space-xxl) var(--space-md) 0;
+        margin: 0 var(--space-xxl) calc(var(--space-xl) - var(--space-xxxxs)) 0;
       }
     }
   }

@@ -69,7 +69,7 @@ const props = defineProps({ total: Number });
     border: 1px solid var(--black-03);
     @media screen and (max-width: 1297px) {
       width: calc((100% - (var(--space-xxl) * 2)) * 0.35);
-      margin: var(--space-lg) var(--space-xxl) 1px auto;
+      margin: var(--space-xl) var(--space-xxl) 1px auto;
       min-height: 10vh;
     }
     h2 {

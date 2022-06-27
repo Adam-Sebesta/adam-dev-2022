@@ -25,7 +25,7 @@
 #aboutLetsTalk {
   width: calc(100% + var(--space-xl));
   transform: translateX(calc(var(--space-xl) * -1));
-  margin-bottom: var(--space-sm);
+  margin-bottom: calc(var(--space-xl) - 10px);
   @media screen and (max-width: 1297px) {
     width: calc(100% + var(--space-xxl));
     transform: translateX(calc(var(--space-xxl) * -1));

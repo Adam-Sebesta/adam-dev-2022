@@ -51,7 +51,7 @@ const maxProjects = computed((): Number => {
     height: 1px;
     width: 100vw;
     background: var(--white-01);
-    top: 3px;
+    top: var(--space-xxxxs);
     left: 0;
     position: absolute;
     z-index: 1;

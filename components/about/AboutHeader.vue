@@ -21,11 +21,11 @@
 #aboutHeader {
   width: 100%;
   height: unset;
-  margin-top: var(--space-xl);
+  // margin-top: var(--space-xxl);
   max-width: 1500px;
 }
 #aboutHeaderText {
-  margin: calc(var(--space-sm) + 2px) 0 var(--space-xl) 0;
+  margin: calc(var(--space-sm) + 2px) 0 0 0;
   color: var(--black-01);
   span:first-of-type {
     text-transform: lowercase !important;

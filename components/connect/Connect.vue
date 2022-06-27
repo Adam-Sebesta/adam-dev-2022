@@ -67,7 +67,7 @@
         justify-content: space-between;
         @media screen and (max-width: 1297px) {
           flex-direction: column;
-          height: 400px;
+          height: 350px;
           padding-bottom: var(--space-xxxl);
         }
         .contact-text-left {
