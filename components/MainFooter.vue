@@ -19,7 +19,7 @@ footer {
   justify-content: space-between;
   color: var(--grey-02);
   align-items: center;
-  @media screen and (max-width: 1297px) {
+  @media screen and (max-width: 1279px) {
     padding: var(--space-md) var(--space-xxl);
   }
   .footer-left {

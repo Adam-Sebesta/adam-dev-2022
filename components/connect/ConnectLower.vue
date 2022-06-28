@@ -30,7 +30,7 @@ const links: ContactLink[] = [
   justify-content: space-between;
   width: calc(100% - (var(--space-xl) * 2));
   margin: var(--space-xxl) auto var(--space-md) auto;
-  @media screen and (max-width: 1297px) {
+  @media screen and (max-width: 1279px) {
     width: calc(100% - (var(--space-xxl) * 2));
   }
   .connect-lower-left {

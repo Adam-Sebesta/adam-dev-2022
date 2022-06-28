@@ -27,6 +27,7 @@
   <ProjectsLoadOther
     @loadMore="loadMoreClicked = true"
     :total="Object.values(projects).length"
+    :clicked="loadMoreClicked"
   />
 </template>
 <script setup lang="ts">
@@ -63,7 +64,7 @@ const maxProjects = computed((): Number => {
     color: black;
     position: relative;
     h3 {
-      transform: translateY(10px);
+      transform: translateY(30%);
     }
     &:hover {
       .active {
@@ -74,7 +75,7 @@ const maxProjects = computed((): Number => {
     &.first {
       // margin-top: calc(var(--space-lg) +);
     }
-    @media screen and (max-width: 1297px) {
+    @media screen and (max-width: 1279px) {
       padding: 0 var(--space-xxl) 0 var(--space-xxl);
     }
     .project-lower {
@@ -85,7 +86,7 @@ const maxProjects = computed((): Number => {
       .stack {
         margin-left: var(--space-xs);
       }
-      @media screen and (max-width: 1297px) {
+      @media screen and (max-width: 1279px) {
         flex-direction: column;
         .stack {
           margin-left: 0;

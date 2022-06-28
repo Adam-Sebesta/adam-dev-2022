@@ -216,3 +216,9 @@ h5 {
     font-size: clamp(14px, var(--text-sm), 20px);
   }
 }
+
+// Misc Elements
+.full-length-divider {
+  width: 4000px;
+  transform: translateX(-2000px);
+}

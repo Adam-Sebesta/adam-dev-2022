@@ -51,7 +51,7 @@
     padding: var(--space-xxxl) var(--space-xl) var(--space-lg) var(--space-xl);
     min-height: 30vh;
     background: var(--blue-gradient-48);
-    @media screen and (max-width: 1297px) {
+    @media screen and (max-width: 1279px) {
       padding: var(--space-xxxxl) var(--space-xxl) var(--space-lg)
         var(--space-xxl);
     }
@@ -65,7 +65,7 @@
       .contact-text-wrapper {
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width: 1297px) {
+        @media screen and (max-width: 1279px) {
           flex-direction: column;
           height: 350px;
           padding-bottom: var(--space-xxxl);

@@ -7,6 +7,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       class="project-divider"
+      preserveAspectRatio="xMaxYMax meet"
     >
       <rect
         width="56"
@@ -16,22 +17,28 @@
         class="project-divider-line"
       />
       <path d="M1651 8H1663V0L1651 7V8Z" :fill="color" />
-      <rect y="7" width="1719" height="1" :fill="color" />
+      <rect
+        class="full-length-divider"
+        y="7"
+        width="1719"
+        height="1"
+        :fill="color"
+      />
     </svg>
     <div class="active-wrapper">
       <svg
-        width="1530"
+        width="100%"
         height="8"
-        viewBox="0 0 1530 8"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         class="project-divider active"
       >
         <rect
-          width="1518"
+          width="100%"
           height="8"
           transform="matrix(1 0 0 -1 12 8)"
           :fill="color"
+          class="active-wrapper-line"
         />
         <path d="M0 8H12V0L0 7V8Z" :fill="color" />
       </svg>
@@ -58,9 +65,12 @@ const props = defineProps({ color: String });
     left: 0;
     width: calc(100% + var(--space-xl));
     transform: translateX(calc(var(--space-xl) * -1));
-    @media screen and (max-width: 1297px) {
+    @media screen and (max-width: 1279px) {
       width: calc(100% + var(--space-xxl));
       transform: translateX(calc(var(--space-xxl) * -1));
+    }
+    .active-wrapper-line {
+      min-width: 100%;
     }
     &.active {
       width: 0%;

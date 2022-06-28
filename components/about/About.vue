@@ -68,22 +68,24 @@
         min-width: 180px;
       }
       .lower-text-left {
-        max-width: 70%;
+        max-width: 50%;
         color: var(--black-03);
       }
       .lower-text-right {
-        width: 90%;
+        width: 39%;
         color: var(--black-02);
-        margin: var(--space-xl) 0 var(--space-xl) 11%;
+        margin: var(--space-xl) 0 var(--space-xl) auto;
       }
       @include breakpoint("md") {
-        max-width: 71vw;
         flex-direction: column;
         .lower-text-left {
           margin: var(--space-lg) 0 0 0;
+          min-width: 70%;
         }
         .lower-text-right {
-          margin: var(--space-xl) 0 var(--space-xxxl) 0;
+          margin: var(--space-xl) 0 0 0;
+          padding-bottom: var(--space-xxxl);
+          min-width: 70%;
         }
       }
     }

@@ -6,6 +6,7 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     id="aboutLetsTalk"
+    preserveAspectRatio="xMaxYMax meet"
   >
     <path
       d="M1173.13 119.5H1718.5V0.5H1121.5V89.7112L1173.13 119.5Z"
@@ -17,7 +18,7 @@
     />
     <rect x="1663" width="56" height="8" fill="#141416" />
     <path d="M1651 0H1663V8L1651 1V0Z" fill="#141416" />
-    <rect width="1121" height="1" fill="#141416" />
+    <rect class="full-length-divider" width="100%" height="1" fill="#141416" />
   </svg>
 </template>
 <script setup lang="ts"></script>
@@ -25,10 +26,11 @@
 #aboutLetsTalk {
   width: calc(100% + var(--space-xl));
   transform: translateX(calc(var(--space-xl) * -1));
-  margin-bottom: calc(var(--space-xl) - 10px);
-  @media screen and (max-width: 1297px) {
+  margin-bottom: calc(var(--space-xl) - 7vh);
+  @media screen and (max-width: 1279px) {
     width: calc(100% + var(--space-xxl));
     transform: translateX(calc(var(--space-xxl) * -1));
+    margin-bottom: var(--space-xxl);
   }
 }
 </style>
