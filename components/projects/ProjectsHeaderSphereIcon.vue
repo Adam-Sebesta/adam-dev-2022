@@ -49,6 +49,9 @@
   @media screen and (max-width: 1279px) {
     width: 17%;
   }
+  @media screen and (max-width: 560px) {
+    width: 32%;
+  }
   #projectsHeaderSphereIcon {
     width: 100%;
     height: 100%;

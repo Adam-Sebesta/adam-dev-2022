@@ -21,7 +21,8 @@
   background: black;
   position: relative;
   @media screen and (max-width: 1279px) {
-    height: 30vh;
+    height: 45vh;
+    max-height: 365px;
   }
   &::after {
     content: "";
@@ -31,6 +32,9 @@
     bottom: calc(var(--space-xxxxs) * -1);
     left: 0;
     position: absolute;
+    @media screen and (max-width: 560px) {
+      bottom: calc(var(--space-xs) * -1);
+    }
   }
   .projects-header-text-wrapper {
     display: flex;

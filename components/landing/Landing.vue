@@ -37,6 +37,9 @@
       @include breakpoint("md") {
         text-shadow: -3px -1px #050454;
       }
+      @include breakpoint("sm") {
+        font-size: 30px;
+      }
     }
     p {
       max-width: 492px;

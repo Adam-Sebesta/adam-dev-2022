@@ -45,6 +45,9 @@
     left: 0;
     position: absolute;
     z-index: 1;
+    @media screen and (max-width: 560px) {
+      top: var(--space-xs);
+    }
   }
   .connect-upper {
     color: var(--white-01);

@@ -98,7 +98,7 @@ $breakpoints: (
       --page-margin: 3.125vw;
     }
     @include breakpoint(sm) {
-      --space-unit: 1em;
+      --space-unit: 1.5em;
       --text-base-size: 1vw;
       --text-scale-ratio: 1.25;
       --page-margin: 4.5vw;

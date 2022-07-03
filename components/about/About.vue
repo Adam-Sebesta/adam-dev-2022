@@ -45,6 +45,9 @@
     top: var(--space-xxxxs);
     left: 0;
     position: absolute;
+    @media screen and (max-width: 560px) {
+      top: var(--space-xs);
+    }
   }
   .text-container {
     color: black;
@@ -57,6 +60,11 @@
       @include breakpoint("md") {
         align-items: flex-start;
         margin-top: var(--space-xxxl);
+      }
+      @include breakpoint("sm") {
+        align-items: flex-start;
+        margin-top: var(--space-xxxl);
+        font-size: 8px;
       }
     }
     .lower-text {
@@ -86,6 +94,16 @@
           margin: var(--space-xl) 0 0 0;
           padding-bottom: var(--space-xxxl);
           min-width: 70%;
+        }
+      }
+      @include breakpoint("md") {
+        flex-direction: column;
+        .lower-text-left {
+          min-width: 100%;
+        }
+        .lower-text-right {
+          padding-bottom: var(--space-xxxl);
+          min-width: 100%;
         }
       }
     }

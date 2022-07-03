@@ -56,6 +56,9 @@ const maxProjects = computed((): Number => {
     left: 0;
     position: absolute;
     z-index: 1;
+    @media screen and (max-width: 560px) {
+      top: var(--space-xs);
+    }
   }
   .project {
     padding: 0 var(--space-xl) 0 var(--space-xl);
@@ -78,6 +81,15 @@ const maxProjects = computed((): Number => {
     @media screen and (max-width: 1279px) {
       padding: 0 var(--space-xxl) 0 var(--space-xxl);
     }
+    @media screen and (max-width: 561px) {
+      padding: var(--space-xxl);
+      &.first {
+        padding-top: calc(var(--space-xxl) * 2);
+      }
+      h3 {
+        transform: unset;
+      }
+    }
     .project-lower {
       display: flex;
       width: 35%;
@@ -88,6 +100,14 @@ const maxProjects = computed((): Number => {
       }
       @media screen and (max-width: 1279px) {
         flex-direction: column;
+        .stack {
+          margin-left: 0;
+        }
+      }
+      @media screen and (max-width: 560px) {
+        flex-direction: column;
+        padding-top: var(--space-xl);
+        width: 100%;
         .stack {
           margin-left: 0;
         }

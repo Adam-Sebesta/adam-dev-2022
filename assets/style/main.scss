@@ -71,6 +71,9 @@ h1 {
 
 h2 {
   font-size: clamp(16px, var(--text-xxl), 120px);
+  @media screen and (max-width: 561px) {
+    font-size: clamp(40px, var(--text-xxxl), 70px);
+  }
 }
 h3 {
   font-size: clamp(16px, var(--text-xl), 88px);
@@ -78,7 +81,7 @@ h3 {
     font-size: clamp(40px, var(--text-xl), 70px);
   }
   @media screen and (max-width: 561px) {
-    font-size: clamp(35px, var(--text-xl), 70px);
+    font-size: clamp(28px, var(--text-xxl), 70px);
   }
 }
 
