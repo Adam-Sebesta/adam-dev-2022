@@ -73,6 +73,11 @@
           height: 350px;
           padding-bottom: var(--space-xxxl);
         }
+        @media screen and (max-width: 560px) {
+          flex-direction: column;
+          height: 210px;
+          padding-bottom: var(--space-xxxl);
+        }
         .contact-text-left {
           p {
             color: var(--grey-02);
@@ -83,6 +88,9 @@
           flex-direction: column;
           justify-content: space-between;
           width: 35%;
+          @media screen and (max-width: 560px) {
+            width: unset;
+          }
           .contact-text-right-upper {
             color: var(--grey-02);
           }

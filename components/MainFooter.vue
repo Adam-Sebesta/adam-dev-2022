@@ -22,10 +22,17 @@ footer {
   @media screen and (max-width: 1279px) {
     padding: var(--space-md) var(--space-xxl);
   }
+  @media screen and (max-width: 560px) {
+    width: unset;
+    padding: var(--space-xxl);
+  }
   .footer-left {
   }
   .footer-right {
     width: 35%;
+    @media screen and (max-width: 560px) {
+      width: unset;
+    }
   }
 }
 </style>

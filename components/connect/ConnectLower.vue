@@ -33,6 +33,10 @@ const links: ContactLink[] = [
   @media screen and (max-width: 1279px) {
     width: calc(100% - (var(--space-xxl) * 2));
   }
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+    margin: var(--space-xxl) auto;
+  }
   .connect-lower-left {
     color: var(--grey-02);
   }
