@@ -1,5 +1,9 @@
 <template>
-  <MainHeader />
+  <MainHeader @toggleMobileMenu="mobileMenu = !mobileMenu" />
+  <MobileMenu
+    :active="mobileMenu"
+    @toggleMobileMenu="mobileMenu = !mobileMenu"
+  />
   <div class="page landing">
     <div class="text-container">
       <h3>Full-Stack<br />Development</h3>
@@ -14,7 +18,9 @@
     <LandingIllus />
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const mobileMenu = ref(false);
+</script>
 <style lang="scss">
 @import "../assets/style/variables";
 

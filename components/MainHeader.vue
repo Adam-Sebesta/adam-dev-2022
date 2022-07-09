@@ -5,13 +5,16 @@
       <p class="text2-medium">Adam Sebesta</p>
     </div>
     <div class="header-right">
-      <a
-        :class="(l.dot ? 'dot' : '') + ' text2-medium'"
+      <button
+        :class="(l.dot ? 'dot' : '') + ' text2-medium desktop-nav-link'"
         v-for="l in links"
         @click="scrollTo(l.hash)"
-        >{{ l.text }}</a
       >
-      <MainHeaderMobileNavButton />
+        {{ l.text }}
+      </button>
+      <MainHeaderMobileNavButton
+        @toggleMobileMenu="$emit('toggleMobileMenu')"
+      />
     </div>
   </header>
 </template>
@@ -71,7 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a {
+    .desktop-nav-link {
       color: var(--white-01);
       text-decoration: none;
       padding: var(--space-xxs);
