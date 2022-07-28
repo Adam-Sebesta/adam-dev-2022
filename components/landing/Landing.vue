@@ -29,6 +29,7 @@ const mobileMenu = ref(false);
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden;
   padding-top: 70px;
   background: var(--blue-gradient-down);
   .text-container {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="connect-leave-message-wrapper">
+    <div class="connect-leave-message-wrapper desktop">
       <nuxt-link
         to="mailto:info@adamsebesta.dev?subject={Your Project's Name} | Let's Talk"
       >
@@ -25,17 +25,16 @@
         </svg>
       </nuxt-link>
       <svg
-        width="1121"
+        width="100%"
         height="1"
-        viewBox="0 0 1121 1"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         class="leave-message-divider"
       >
-        <rect width="1121" height="1" fill="#F4F8FA" />
+        <rect width="100%" height="1" fill="#F4F8FA" />
       </svg>
     </div>
-    <div class="connect-leave-message-wrapper">
+    <div class="connect-leave-message-wrapper mobile">
       <nuxt-link
         to="mailto:info@adamsebesta.dev?subject={Your Project's Name} | Let's Talk"
       >
@@ -64,7 +63,7 @@
           <path d="M319 0H324V4L319 1V0Z" fill="#F4F8FA" />
           <rect
             class="leave-message-divider"
-            width="128"
+            width="100%"
             height="1"
             fill="#F4F8FA"
           />
@@ -103,20 +102,22 @@
       width: 100%;
       height: unset;
     }
-    #leaveMeAMessageMobile {
+  }
+  @media screen and (max-width: 560px) {
+    #leaveMeAMessageDesktop {
       display: none;
-      position: relative;
-      width: 100%;
-      height: unset;
     }
-    @media screen and (max-width: 560px) {
-      #leaveMeAMessageDesktop {
-        display: none;
-      }
-      #leaveMeAMessageMobile {
-        display: unset;
-      }
-    }
+  }
+}
+.connect-leave-message-wrapper.mobile {
+  display: none;
+  @media screen and (max-width: 560px) {
+    display: block;
+  }
+  #leaveMeAMessageMobile {
+    position: relative;
+    width: 100%;
+    height: unset;
   }
   .leave-message-divider {
     width: 100%;

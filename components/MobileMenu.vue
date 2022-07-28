@@ -55,6 +55,7 @@ const closeMenuAndScrollTo = (hash: string): void => {
   &.active {
     #MobileMenuOverlay {
       opacity: 0.5;
+      display: unset;
     }
     #MobileMenu {
       transform: translateX(0);
@@ -63,6 +64,7 @@ const closeMenuAndScrollTo = (hash: string): void => {
   #MobileMenuOverlay {
     background-color: black;
     cursor: pointer;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
