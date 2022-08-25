@@ -1,5 +1,5 @@
 <template>
-  <img src="static/landing.png" alt="" />
+  <img src="./../../static/landing.png" alt="" />
 </template>
 <script setup lang="ts"></script>
 <style lang="scss">

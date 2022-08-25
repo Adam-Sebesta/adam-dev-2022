@@ -1,7 +1,7 @@
 <template>
   <header class="header-wrapper">
     <div class="header-left">
-      <img src="static/logo/logo-no-text.png" alt="" />
+      <img src="/static/logo/logo-no-text.png" alt="" />
       <p class="text2-medium">Adam Sebesta</p>
     </div>
     <div class="header-right">
