@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@/assets/style/_variables.scss",
     "@/assets/style/reset.scss",
   ],
+  target: "static",
   // vite: {
   //   css: {
   //     preprocessorOptions: {
