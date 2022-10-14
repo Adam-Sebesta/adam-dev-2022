@@ -6,7 +6,7 @@
   />
   <div class="page landing">
     <div class="text-container">
-      <h3>Full-Stack<br />Development</h3>
+      <h3>Cloud Native<br />Engineering</h3>
 
       <div>
         <p class="sub3-medium">
@@ -15,7 +15,7 @@
         </p>
       </div>
     </div>
-    <LandingIllus />
+    <LandingVideo />
   </div>
 </template>
 <script setup lang="ts">
@@ -28,16 +28,21 @@ const mobileMenu = ref(false);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: 125vh;
   overflow-x: hidden;
-  padding-top: 70px;
   background: var(--blue-gradient-down);
   .text-container {
     color: var(--white-01);
     text-align: center;
+    position: absolute;
     margin: var(--space-xl) 0;
+
+    @include breakpoint("md") {
+      top: var(--space-xl);
+    }
     @include breakpoint("sm") {
       margin: var(--space-xxxl) 0;
+      top: var(--space-xxxl);
     }
     h3 {
       text-shadow: -5px -2px #050454;

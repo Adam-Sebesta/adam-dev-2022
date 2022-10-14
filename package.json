@@ -7,8 +7,10 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3",
-    "sass": "^1.52.1",
-    "sass-loader": "^10.2.1"
+    "nuxt": "3.0.0-rc.11",
+    "sass": "^1.54.4",
+    "sass-loader": "^10.2.1",
+    "vue-tsc": "^0.40.5",
+    "@azure/static-web-apps-cli": "^1.0.2"
   }
 }
