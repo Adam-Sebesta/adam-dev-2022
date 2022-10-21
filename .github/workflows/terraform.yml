@@ -10,11 +10,11 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
-    outputs:
-      swa_api_key: ${{ steps.plan.outputs.swa_api_key }}
     defaults:
       run:
         working-directory: infra
+    outputs:
+      swa_api_key: ${{ steps.set_outputs.outputs.swa_api_key }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
