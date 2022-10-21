@@ -40,8 +40,12 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-color -input=false && echo "swa_api_key=$(terraform output swa_api_key)" >> $GITHUB_OUTPUT
+        run: terraform plan -no-color -input=false
         continue-on-error: true
+
+      - name: Set Outputs
+        id: set_outputs
+        run: echo "swa_api_key=$(steps.plan.outputs.swa_api_key)" >> $GITHUB_OUTPUT
 
       - name: Terraform Plan Status
         if: steps.plan.outcome == 'failure'
