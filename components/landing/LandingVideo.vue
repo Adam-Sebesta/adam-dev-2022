@@ -18,11 +18,11 @@ let mounted = ref();
 let src = ref();
 let id = ref();
 let deviceConfig = {
-  mobile: { id: "MobileVideo", src: "./../../assets/MAIN_MOBILE_notext.mp4" },
-  tablet: { id: "TabletVideo", src: "./../../assets/MAIN_TABLET_notext.mp4" },
+  mobile: { id: "MobileVideo", src: "./../../MAIN_MOBILE_notext.mp4" },
+  tablet: { id: "TabletVideo", src: "./../../MAIN_TABLET_notext.mp4" },
   desktop: {
     id: "DesktopVideo",
-    src: "./../../assets/MAIN_DESKTOP_notext.mp4",
+    src: "./../../MAIN_DESKTOP_notext.mp4",
   },
 };
 
@@ -32,7 +32,7 @@ const setVideoProps = (): void => {
 };
 const initLandingVideo = (): void => {
   setVideoProps();
-  console.log(document.querySelector(".landing_video").play(), id.value);
+  // console.log(document.querySelector(".landing_video").play(), id.value);
 };
 
 onMounted(() => {

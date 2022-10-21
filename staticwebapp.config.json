@@ -8,8 +8,15 @@
       }
     }
   ],
+
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+  },
   "mimeTypes": {
     ".json": "text/json",
-    ".css": "text/css"
+    ".css": "text/css",
+    ".mp4": "video/mp4",
+    ".png": " "
   }
 }

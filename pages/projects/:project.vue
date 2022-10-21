@@ -25,7 +25,7 @@
       <div
         class="background-image"
         :style="{
-          backgroundImage: `url(../static/${projectTitle}_prev.jpg)`,
+          backgroundImage: `url('../../../${projectTitle}_prev.jpg')`,
         }"
       ></div>
     </div>
