@@ -10,6 +10,8 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
+    outputs:
+      swa_api_key: ${{ steps.deploy.plan.swa_api_key }}
     defaults:
       run:
         working-directory: infra
@@ -37,12 +39,10 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        if: github.event_name == 'pull_request'
         run: terraform plan -no-color -input=false
         continue-on-error: true
 
       - uses: actions/github-script@v6
-        if: github.event_name == 'pull_request'
         env:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
         with:
@@ -92,7 +92,7 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           app_build_command: "npm run generate"
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_HILL_0BF947C0F }}
+          azure_static_web_apps_api_token: ${{ jobs.terraform.outputs.swa_api_key }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
