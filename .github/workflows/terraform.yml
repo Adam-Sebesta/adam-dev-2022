@@ -45,7 +45,7 @@ jobs:
 
       - name: Set Outputs
         id: set_outputs
-        run: echo "swa_api_key=$(terraform output swa_api_key)" >> $GITHUB_OUTPUT
+        run: echo "swa_api_key=$(terraform output -raw swa_api_key)" >> $GITHUB_OUTPUT && echo terraform output -raw swa_api_key
 
       - name: Terraform Plan Status
         if: steps.plan.outcome == 'failure'
