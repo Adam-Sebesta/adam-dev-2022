@@ -11,7 +11,7 @@ jobs:
     name: "Terraform"
     runs-on: ubuntu-latest
     outputs:
-      swa_api_key: ${{ steps.apply.swa_api_key }}
+      swa_api_key: ${{ steps.plan.swa_api_key }}
     defaults:
       run:
         working-directory: infra
@@ -39,7 +39,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-color -input=false
+        run: terraform plan -no-color -input=false | echo "swa_api_key=$(terraform output -raw swa_api_key)" >> $GITHUB_OUTPUT
         continue-on-error: true
 
       - name: Terraform Plan Status
