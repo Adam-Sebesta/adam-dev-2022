@@ -6,4 +6,4 @@ node_modules
 .output
 .env
 dist
-/infra/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.0.2/darwin_amd64/terraform-provider-azurerm_v3.0.2_x5
+/infra/.*
