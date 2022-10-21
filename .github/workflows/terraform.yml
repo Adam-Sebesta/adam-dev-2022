@@ -10,11 +10,11 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
+    outputs:
+      swa_api_key: ${{ steps.plan.outputs.swa_api_key }}
     defaults:
       run:
         working-directory: infra
-    outputs:
-      swa_api_key: ${{ steps.plan.swa_api_key }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -24,6 +24,7 @@ jobs:
         with:
           # terraform_version: 0.13.0:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+          terraform_wrapper: false
 
       - name: Terraform Format
         id: fmt
@@ -44,7 +45,7 @@ jobs:
 
       - name: Set Outputs
         id: set_outputs
-        run: echo "swa_api_key=${{ steps.plan.outputs.swa_api_key }}" >> $GITHUB_OUTPUT
+        run: echo "swa_api_key=$(terraform output swa_api_key)" >> $GITHUB_OUTPUT
 
       - name: Terraform Plan Status
         if: steps.plan.outcome == 'failure'
