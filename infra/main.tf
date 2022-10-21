@@ -22,7 +22,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = "eastus"
+  location = "eastus2"
   tags = {
     Environment = "Production"
   }
