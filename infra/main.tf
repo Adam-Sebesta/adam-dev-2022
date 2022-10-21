@@ -28,7 +28,7 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 resource "azurerm_static_site" "swa" {
-  name                = "swa-adam-sebesta-2022"
+  name                = "swa-adam-sebesta-2022-eastus2"
   resource_group_name = var.resource_group_name
   location            = azurerm_resource_group.rg.location
 }
