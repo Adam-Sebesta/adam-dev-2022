@@ -11,7 +11,7 @@ jobs:
     name: "Terraform"
     runs-on: ubuntu-latest
     outputs:
-      swa_api_key: ${{ steps.deploy.plan.swa_api_key }}
+      swa_api_key: ${{ steps.plan.swa_api_key }}
     defaults:
       run:
         working-directory: infra
