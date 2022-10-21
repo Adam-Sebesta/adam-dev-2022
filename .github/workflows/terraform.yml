@@ -45,7 +45,7 @@ jobs:
 
       - name: Set Outputs
         id: set_outputs
-        run: echo "swa_api_key=$(terraform output -raw swa_api_key)" >> $GITHUB_OUTPUT && echo terraform output -raw swa_api_key
+        run: echo "swa_api_key=$(terraform output -raw swa_api_key)" >> $GITHUB_OUTPUT
 
       - name: Terraform Plan Status
         if: steps.plan.outcome == 'failure'
@@ -81,7 +81,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
-    needs: build_and_deploy_job
+    needs: [terraform, build_and_deploy_job]
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
@@ -90,5 +90,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_HILL_0BF947C0F }}
+          azure_static_web_apps_api_token: ${{ needs.terraform.outputs.swa_api_key }}
           action: "close"
