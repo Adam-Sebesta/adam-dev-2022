@@ -2,6 +2,8 @@
   <header class="header-wrapper">
     <div class="header-left">
       <!-- <img src="/static/logo/logo-no-text.png" alt="" /> -->
+      <LogoWhite class="header-logo"></LogoWhite>
+
       <p class="text2-medium">Adam Sebesta</p>
     </div>
     <div class="header-right">
@@ -61,8 +63,9 @@ header {
     display: flex;
     align-items: center;
     color: var(--white-01);
-    img {
-      width: 33px;
+    .header-logo {
+      width: 20px;
+      margin-right: var(--page-margin);
     }
     @media screen and (max-width: 560px) {
       p {
