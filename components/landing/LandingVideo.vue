@@ -37,8 +37,8 @@ const initLandingVideo = (): void => {
 
 onMounted(() => {
   mounted.value = true;
-  initLandingVideo();
-  window.addEventListener("resize", setVideoProps);
+  // initLandingVideo();
+  // window.addEventListener("resize", setVideoProps);
 });
 </script>
 <style lang="scss">
