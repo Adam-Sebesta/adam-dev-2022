@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.12",
-    "sass": "^latest",
+    "sass": "^1.55.0",
     "sass-loader": "^10.2.1",
     "vue-tsc": "^0.40.5",
     "@azure/static-web-apps-cli": "^1.0.2",
