@@ -65,7 +65,7 @@ header {
     color: var(--white-01);
     .header-logo {
       width: 20px;
-      margin-right: var(--page-margin);
+      margin-right: calc(var(--page-margin) / 2);
     }
     @media screen and (max-width: 560px) {
       p {
