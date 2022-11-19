@@ -1,5 +1,6 @@
+import { Device } from "~~/types/devices";
 export function useResponsive() {
-  const device = (): string => {
+  const device = (): Device | undefined => {
     if (window.innerWidth < 560) {
       return "mobile";
     }

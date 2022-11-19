@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
   },
-  target: "static",
+  // target: "static",
   // vite: {
   //   css: {
   //     preprocessorOptions: {

@@ -38,20 +38,21 @@ import { Project } from "~/types/projects";
 
 const route = useRoute();
 const projectTitle: string | string[] = route.params.project;
-const project = projects[projectTitle];
+const project: Project = projects[projectTitle];
 </script>
 
-<style lang="sass">
-
-.project
-  overflow: hidden
-  height: 100%
-  width:100%
-  .background-image
-    width: 800px
-    border-radius: 2px
-    height: 500px
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
+<style lang="scss">
+.project {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  .background-image {
+    width: 800px;
+    border-radius: 2px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 </style>

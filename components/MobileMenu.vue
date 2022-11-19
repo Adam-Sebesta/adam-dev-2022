@@ -38,17 +38,20 @@ const links: HeaderLink[] = [
 ];
 
 const closeMenuAndScrollTo = (hash: string): void => {
+  let section = document.querySelector(hash);
   emit("toggleMobileMenu");
   setTimeout(() => {
-    document.querySelector(hash).scrollIntoView({
-      behavior: "smooth",
-    });
+    section &&
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
   }, 200);
 };
 </script>
 <style lang="scss">
 .mobile-menu-wrapper {
   display: none;
+  position: relative;
   @media screen and (max-width: 560px) {
     display: block;
   }
@@ -59,10 +62,13 @@ const closeMenuAndScrollTo = (hash: string): void => {
     }
     #MobileMenu {
       transform: translateX(0);
+      z-index: 3;
     }
   }
   #MobileMenuOverlay {
     background-color: black;
+    height: 100vh;
+    z-index: 2;
     cursor: pointer;
     display: none;
     position: absolute;
@@ -72,8 +78,10 @@ const closeMenuAndScrollTo = (hash: string): void => {
     left: 0;
     opacity: 0;
     transition: opacity 0.35s ease-in-out;
+    z-index: 1;
   }
   #MobileMenu {
+    z-index: 2;
     position: absolute;
     top: 0;
     right: 0;

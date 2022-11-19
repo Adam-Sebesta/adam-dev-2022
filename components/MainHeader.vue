@@ -41,14 +41,17 @@ const links: HeaderLink[] = [
   },
 ];
 const scrollTo = (hash: string): void => {
-  document.querySelector(hash).scrollIntoView({
-    behavior: "smooth",
-  });
+  let section = document.querySelector(hash);
+  section &&
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
 };
 </script>
 <style lang="scss">
 .header-wrapper {
   width: 100%;
+  z-index: 1;
 }
 header {
   //  TODO: fix width

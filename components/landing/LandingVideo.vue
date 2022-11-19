@@ -50,9 +50,8 @@ onMounted(() => {
 #MobileVideo,
 #TabletVideo {
   width: 100%;
-  height: 125vh;
+  height: 115vh;
   object-fit: cover;
-
   top: var(--space-xxxl);
 }
 
