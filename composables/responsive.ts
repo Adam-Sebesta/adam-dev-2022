@@ -4,11 +4,11 @@ export function useResponsive() {
     if (window.innerWidth < 560) {
       return "mobile";
     }
-    if (window.innerWidth < 1279 && window.innerWidth > 560) {
+    if (window.innerWidth < 840 && window.innerWidth > 560) {
       return "tablet";
     }
 
-    if (window.innerWidth > 1279) {
+    if (window.innerWidth > 840) {
       return "desktop";
     }
   };

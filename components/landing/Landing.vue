@@ -5,13 +5,12 @@
     @toggleMobileMenu="mobileMenu = !mobileMenu"
   />
   <div class="page landing">
-    <div class="text-container">
+    <div class="text-container fadein">
       <h3>Cloud Native<br />Engineering</h3>
 
       <div>
         <p class="sub3-medium">
-          Bringing your most creative idea to life with unbonded and undonded
-          efficiency.
+          Empowering your digital transformation with the cloud
         </p>
       </div>
     </div>
@@ -36,7 +35,7 @@ const mobileMenu = ref(false);
     text-align: center;
     position: absolute;
     margin: var(--space-xl) 0;
-
+    z-index: 100;
     @include breakpoint("md") {
       top: var(--space-xl);
     }
@@ -54,7 +53,7 @@ const mobileMenu = ref(false);
       }
     }
     p {
-      max-width: 492px;
+      max-width: 368px;
       margin: var(--space-xxs) auto;
       @include breakpoint("sm") {
         max-width: 275px;

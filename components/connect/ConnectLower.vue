@@ -1,7 +1,7 @@
 <template>
   <div class="connect-lower">
     <div class="connect-lower-left">
-      <p class="text2-regular">© 2022 Adam Sebesta</p>
+      <p class="text2-regular">© 2023 Adam Sebesta</p>
     </div>
     <div class="connect-lower-right">
       <nuxt-link
@@ -19,9 +19,12 @@
 <script setup lang="ts">
 import { ContactLink } from "../../types/contactLink";
 const links: ContactLink[] = [
-  { label: "Instagram", link: "" },
-  { label: "LinkedIn", link: "" },
-  { label: "Github", link: "" },
+  { label: "Instagram", link: "https://www.instagram.com/adamsebesta_/" },
+  {
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/company/adam-sebesta-cloud/",
+  },
+  { label: "Github", link: "https://github.com/adamsebesta" },
 ];
 </script>
 <style lang="scss">

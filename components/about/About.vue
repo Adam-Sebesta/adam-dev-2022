@@ -5,17 +5,86 @@
         <AboutHeader />
       </div>
       <div class="lower-text">
-        <div class="lower-text-left sub1-medium">
-          Shoot me an email effort made was a lot, we need to think.
+        <div class="lower-text-item">
+          <div class="sub1-medium lower-text-item-header">
+            Successful Businesses Use Adam’s Services
+          </div>
+          <div class="lower-text-right text2-regular">
+            I bring increased efficiency, flexibility, and security to
+            enterprises of all shapes and sizes. I help my clients understand,
+            integrate, and leverage the cloud using the most cost-effective
+            solutions possible.
+            <br /><br />
+            <span class="sub2-medium">Here’s how...</span>
+            <ol style="list-style: circle; padding: 1rem 0 0 1.5rem">
+              <li>Understanding your DevOps needs</li>
+              <li>
+                Implementing enterprise-grade, security-first applications
+              </li>
+              <li>Building complete cloud applications + systems</li>
+              <li>Integrating existing software</li>
+              <li>Automating repetitive tasks + processes</li>
+              <li>Maintaining all cloud + system infrastructure</li>
+              <li>
+                Creating distributed systems leveraging event-driven
+                architecture + micro-services
+              </li>
+              <li>Developing Shopify + custom cloud builds</li>
+            </ol>
+          </div>
         </div>
-        <div class="lower-text-right text2-regular">
-          Shoot me an email effort made was a lot, we need to think big start
-          small and scale fast to energize our clie proceduralize. We should
-          leverage existing asserts that ladder.
-          <br /><br />
-          Shoot me an email effort made was a lot, we need to think big start
-          small and scale fast to energize our clie proceduralize. We should
-          leverage existing asserts that ladder.
+        <div class="lower-text-item">
+          <div class="sub1-medium lower-text-item-header">
+            Adam’s Easy 3-Step Process
+          </div>
+
+          <ol class="text2-regular lower-text-right" type="1">
+            <li>
+              <span class="sub2-medium">Explore</span><br />
+              I know that many of the solutions I provide can do wonders for
+              building next-level operational efficiency, however, you should be
+              convinced of this too. That’s why I take the time to understand
+              your needs and ensure whatever I do for you is best suited to your
+              company and its processes.
+            </li>
+            <li>
+              <span class="sub2-medium">Develop</span><br />
+              Once we agree on the right solution for your organization, I build
+              it. But before we go full steam ahead, I test out your system or
+              software with you, making tweaks wherever necessary to get it just
+              right. When everything is working just how you envisioned, we can
+              move on to the final stage.
+            </li>
+            <li>
+              <span class="sub2-medium">Implement</span><br />
+              Here, I help you implement your solution throughout your
+              organization. I then train you and your staff on everything you
+              need to know, so you can steer on your own with confidence! If you
+              have any questions or need any support or alterations made, I can
+              easily do that for you.
+            </li>
+          </ol>
+        </div>
+        <div class="lower-text-item">
+          <div class="text2-regular">
+            <div class="sub1-medium lower-text-item-header">
+              Working With Adam
+            </div>
+
+            <div class="text2-regular lower-text-right">
+              With a broad background in sales, I’ve mastered the art of
+              communication, making it easier for me to work with my clients. As
+              an experienced full-stack developer and the best freelance cloud
+              engineer you’ll ever meet (according to my clients!) I understand
+              all the technical considerations that need to be factored in,
+              applying these to higher-level decision-making. While many of the
+              structures I create are complex in nature, they can all
+              effortlessly slot into your business processes to provide you with
+              immediate value. My clients enjoy working with me because I go the
+              extra mile to demonstrate how my cloud-integrated solutions can
+              benefit them, with the results to back this up.
+            </div>
+          </div>
         </div>
       </div>
       <AboutLetsTalk />
@@ -69,20 +138,35 @@
     }
     .lower-text {
       display: flex;
+      flex-direction: column;
       // justify-content: space-between;
       margin-top: var(--space-md);
 
       div {
         min-width: 180px;
       }
+      .lower-text-item {
+        ol {
+          list-style: decimal-leading-zero;
+          li::marker {
+            font-size: 20px;
+          }
+          li:not(:first-of-type) {
+            padding: 1rem 0;
+          }
+        }
+        .sub1-medium {
+          max-width: 55%;
+        }
+      }
       .lower-text-left {
         max-width: 50%;
         color: var(--black-03);
       }
       .lower-text-right {
-        width: 39%;
+        width: 45%;
         color: var(--black-02);
-        margin: var(--space-xl) 0 var(--space-xl) auto;
+        margin: 0 0 var(--space-xl) auto;
       }
       @include breakpoint("md") {
         flex-direction: column;

@@ -1,7 +1,7 @@
 <template>
   <video
     :id="id"
-    class="landing_video"
+    class="landing_video fadein"
     autoplay="true"
     playsinline
     loop
@@ -22,7 +22,7 @@ let deviceConfig = {
   tablet: { id: "TabletVideo", src: "./../../MAIN_TABLET_notext.mp4" },
   desktop: {
     id: "DesktopVideo",
-    src: "./../../MAIN_DESKTOP_notext.mp4",
+    src: "./../../MAIN_DESKTOP_notext_720p.mp4",
   },
 };
 
@@ -42,15 +42,40 @@ onMounted(() => {
 });
 </script>
 <style lang="scss">
+@import "../assets/style/variables";
 .landing_video {
-  height: unset;
+  min-height: 1200px;
   // width: calc(100% - (var(--space-xl) * 2));
+  background-color: transparent;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  // @media screen and (min-width: 1600px) {
+  width: 100%;
+  top: var(--space-xxxl);
+  // }
+}
+.fadein {
+  opacity: 1;
+  animation-name: fadeInAnimation;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #MobileVideo,
 #TabletVideo {
   width: 100%;
-  height: 115vh;
+  // height: 115vh;
   object-fit: cover;
   top: var(--space-xxxl);
 }

@@ -9,7 +9,7 @@
         <p class="contact-text-header text1-semibold">Adam Sebesta</p>
         <div class="contact-text-wrapper">
           <div class="contact-text-left">
-            <p class="text2-medium uppercase">creative full-stack developer</p>
+            <p class="text2-medium uppercase">creative Cloud Architect</p>
           </div>
           <div class="contact-text-right">
             <div class="text2-medium uppercase contact-text-right-upper">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="sub2-medium uppercase contact-text-right-lower">
-              <p>info@adamsebesta.dev</p>
+              <p>hello@adamsebesta.com</p>
               <p>+49 1520 834 1820</p>
             </div>
           </div>
