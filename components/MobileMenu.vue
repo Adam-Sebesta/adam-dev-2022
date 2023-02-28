@@ -40,6 +40,7 @@ const links: HeaderLink[] = [
 const closeMenuAndScrollTo = (hash: string): void => {
   let section = document.querySelector(hash);
   emit("toggleMobileMenu");
+
   setTimeout(() => {
     section &&
       section.scrollIntoView({

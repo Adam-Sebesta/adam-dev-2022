@@ -1,13 +1,13 @@
 <template>
-  <MainHeader @toggleMobileMenu="mobileMenu = !mobileMenu" />
+  <MainHeader @toggleMobileMenu="handleToggleMobileMenu()" />
   <MobileMenu
+    :class="'mobile-menu' + (mobileMenu ? ' active' : '')"
     :active="mobileMenu"
-    @toggleMobileMenu="mobileMenu = !mobileMenu"
+    @toggleMobileMenu="handleToggleMobileMenu()"
   />
   <div class="page landing">
     <div class="text-container scale3din">
       <h3>Cloud Native<br />Engineering</h3>
-
       <div>
         <p class="sub3-medium">
           Empowering your digital transformation with the cloud
@@ -19,6 +19,16 @@
 </template>
 <script setup lang="ts">
 const mobileMenu = ref(false);
+const handleToggleMobileMenu = (): void => {
+  console.log(mobileMenu.value);
+  mobileMenu.value = !mobileMenu.value;
+  console.log(mobileMenu.value);
+  if (mobileMenu.value) {
+    document.body.style.position = "fixed";
+  } else {
+    document.body.style.position = "unset";
+  }
+};
 </script>
 <style lang="scss">
 @import "../assets/style/variables";
@@ -35,7 +45,7 @@ const mobileMenu = ref(false);
     text-align: center;
     position: absolute;
     margin: var(--space-xl) 0;
-    z-index: 100;
+    z-index: 1;
     @include breakpoint("md") {
       top: var(--space-xl);
     }

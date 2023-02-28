@@ -63,13 +63,13 @@ onMounted(() => {
   animation-name: scale3din;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: forwards; // keep the style after the animation is done
 }
 
 @keyframes scale3din {
   0% {
-    transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.03, 1.03, 1.03);
   }
   100% {
     transform: scale3d(1, 1, 1);

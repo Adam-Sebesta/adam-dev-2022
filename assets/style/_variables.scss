@@ -43,7 +43,12 @@ $breakpoints: (
   --black-03: #141416;
   --black-04: #111113;
   --blue-gradient-up: linear-gradient(180deg, #4f95ff 0%, #002ecf 100%);
-  --blue-gradient-down: linear-gradient(180deg, #002ecf 0%, #4f95ff 100%);
+  --blue-gradient-down: linear-gradient(
+    180deg,
+    #111113 0%,
+    #002ecf 31.25%,
+    #4f95ff 86.98%
+  );
   --blue-gradieht-left: linear-gradient(90deg, #4f95ff 0%, #002ecf 100%);
   --blue-gradient-right: linear-gradient(90deg, #002ecf 0%, #4f95ff 100%);
   --blue-gradient-24: linear-gradient(

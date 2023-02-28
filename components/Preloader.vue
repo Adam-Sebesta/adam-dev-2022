@@ -25,8 +25,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--blue-gradient-down);
-  // background-color: red;
+  background: var(--blue-gradient-down);
   z-index: 1000;
   display: flex;
   justify-content: center;
