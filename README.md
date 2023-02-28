@@ -1,43 +1,33 @@
-# Nuxt 3 Minimal Starter
+# Personal Website README
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This README file provides an overview of my personal website, www.adamsebesta.com.
 
-## Setup
+## Introduction
 
-Make sure to install the dependencies:
+My personal website is a platform where I share my professional work and personal projects. It's an opportunity for me to showcase my skills and interests to potential clients and collaborators.
 
-```bash
-# yarn
-yarn install
+## Website Features
 
-# npm
-npm install
+Here are some of the key features of my website:
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+- Portfolio: A selection of my professional work, including web development projects and design work.
+- About Me: A brief overview of my background, skills, and interests.
+- Contact: A way for potential clients and collaborators to get in touch with me.
 
-## Development Server
+## Technologies Used
 
-Start the development server on http://localhost:3000
+Here are some of the technologies I used to create my website:
 
-```bash
-npm run dev
-```
+- Nuxt 3
+- Typescript
+- Azure Static Web Apps
 
-## Production
+## Future Plans
 
-Build the application for production:
+Here are some of the features I plan to add to my website in the future:
 
-```bash
-npm run build
-```
+- Embedded certification viewer
 
-Locally preview production build:
+## Conclusion
 
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
-# adam-dev-2022
+Thank you for visiting my personal website, www.adamsebesta.com. If you have any questions or feedback, please feel free to contact me using the form on the Contact page.
