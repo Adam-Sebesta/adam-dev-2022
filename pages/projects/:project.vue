@@ -23,7 +23,7 @@
         </div>
       </div>
       <div
-        class="background-image"
+        class="background-image fadein"
         :style="{
           backgroundImage: `url('../../../${projectTitle}_prev.jpg')`,
         }"

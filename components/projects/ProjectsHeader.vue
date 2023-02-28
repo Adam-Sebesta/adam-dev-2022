@@ -4,7 +4,7 @@
       <ProjectsHeaderSphereIcon />
       <div class="projects-header-text">
         <h2>Projects</h2>
-        <p class="sub2-medium">2020 // 2022</p>
+        <p class="sub2-medium">2020 // 2023</p>
       </div>
     </div>
   </div>
