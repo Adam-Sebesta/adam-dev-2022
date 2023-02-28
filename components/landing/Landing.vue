@@ -5,7 +5,7 @@
     @toggleMobileMenu="mobileMenu = !mobileMenu"
   />
   <div class="page landing">
-    <div class="text-container fadein">
+    <div class="text-container scale3din">
       <h3>Cloud Native<br />Engineering</h3>
 
       <div>
@@ -28,7 +28,7 @@ const mobileMenu = ref(false);
   flex-direction: column;
   align-items: center;
   // min-height: 125vh;
-  overflow-x: hidden;
+  overflow: hidden;
   background: var(--blue-gradient-down);
   .text-container {
     color: var(--white-01);

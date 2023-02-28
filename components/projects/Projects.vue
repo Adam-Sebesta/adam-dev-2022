@@ -66,9 +66,7 @@ const maxProjects = computed((): Number => {
     width: 100%;
     color: black;
     position: relative;
-    h3 {
-      transform: translateY(30%);
-    }
+    
     &:hover {
       .active {
         transform: translateX(0%);

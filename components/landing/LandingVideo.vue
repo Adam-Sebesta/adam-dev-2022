@@ -1,16 +1,20 @@
 <template>
   <video
     :id="id"
-    class="landing_video fadein"
+    class="landing_video scale3din"
     autoplay="true"
     playsinline
     loop
     muted
     :src="src"
+    preload="auto"
     alt=""
     type="video/mp4;"
     codecs="avc1.4d002a, mp4a.40.2"
   ></video>
+  <!-- <div class="landing_video">
+    <img src="../../../preload_background.png" alt="">
+  </div> -->
 </template>
 <script setup lang="ts">
 const { device } = useResponsive();
@@ -55,20 +59,20 @@ onMounted(() => {
   top: var(--space-xxxl);
   // }
 }
-.fadein {
-  opacity: 1;
-  animation-name: fadeInAnimation;
+.scale3din {
+  animation-name: scale3din;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; // keep the style after the animation is done
 }
 
-@keyframes fadeInAnimation {
+@keyframes scale3din {
   0% {
-    opacity: 0;
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   100% {
-    opacity: 1;
+    transform: scale3d(1, 1, 1);
   }
 }
 

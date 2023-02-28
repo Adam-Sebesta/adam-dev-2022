@@ -1,9 +1,9 @@
 export default {
-  readingReimagined: {
+  "reading-reimagined": {
     textColor: "black",
     desc: `Halotrade was a pilot build of an enterprise-grade supply chain application. I was the lead developer personally responsible for Infrastructure Planning, Full-Stack Development, and DevOps. This project not only challenged my macro strategizing while collaborating with the product manager, it was my first globally distributed application using Microsoft Azure. `,
     title: "Reading Reimagined",
-    stack: ["AWS", "Terraform", "LucidChart"],
+    stack: ["AWS", "Terraform", "Typescript"],
     img: "halotrade_prev.jpg",
     length: "short",
     sector: "EdTech",
@@ -21,7 +21,7 @@ export default {
     year: "2023",
     to: "/projects/aeyde",
   },
-  progolf: {
+  "progolf-berin": {
     textColor: "black",
     desc: `Halotrade was a pilot build of an enterprise-grade supply chain application. I was the lead developer personally responsible for Infrastructure Planning, Full-Stack Development, and DevOps. This project not only challenged my macro strategizing while collaborating with the product manager, it was my first globally distributed application using Microsoft Azure. `,
     title: "ProGolf Berlin",
@@ -32,7 +32,7 @@ export default {
     year: "2022",
     to: "/projects/progolf-berin",
   },
-  skinKravings: {
+  "skin-kravings": {
     textColor: "black",
     desc: `Halotrade was a pilot build of an enterprise-grade supply chain application. I was the lead developer personally responsible for Infrastructure Planning, Full-Stack Development, and DevOps. This project not only challenged my macro strategizing while collaborating with the product manager, it was my first globally distributed application using Microsoft Azure. `,
     title: "Skin Kravings",
@@ -41,7 +41,7 @@ export default {
     length: "short",
     sector: "Beauty",
     year: "2022",
-    to: "/projects/skin-cravings",
+    to: "/projects/skin-kravings",
     liveLink: "https://cleyobeauty.com/",
   },
   halotrade: {

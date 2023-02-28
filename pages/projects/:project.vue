@@ -25,7 +25,7 @@
       <div
         class="background-image fadein"
         :style="{
-          backgroundImage: `url('../../../${projectTitle}_prev.jpg')`,
+          backgroundImage: `url('../../../projects/${projectTitle}_prev.jpg')`,
         }"
       ></div>
     </div>
