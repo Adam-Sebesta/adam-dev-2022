@@ -13,7 +13,7 @@ useHead({
       content: "Cloud Native Engineering for the future.",
     },
   ],
-  link: [{ rel: "icon", type: "image/ico", href: "public/favicon.ico" }],
+  link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
 });
 </script>
 <style lang="scss"></style>

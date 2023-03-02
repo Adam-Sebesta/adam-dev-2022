@@ -20,9 +20,7 @@
 <script setup lang="ts">
 const mobileMenu = ref(false);
 const handleToggleMobileMenu = (): void => {
-  console.log(mobileMenu.value);
   mobileMenu.value = !mobileMenu.value;
-  console.log(mobileMenu.value);
   if (mobileMenu.value) {
     document.body.style.position = "fixed";
   } else {
