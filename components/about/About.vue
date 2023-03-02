@@ -10,26 +10,28 @@
             Successful Businesses Use Adam’s Services
           </div>
           <div class="lower-text-right text2-regular">
-            I bring increased efficiency, flexibility, and security to
-            enterprises of all shapes and sizes. I help my clients understand,
-            integrate, and leverage the cloud using the most cost-effective
-            solutions possible.
-            <br /><br />
+            <p>
+              I bring increased efficiency, flexibility, and security to
+              enterprises of all shapes and sizes. I help my clients understand,
+              integrate, and leverage the cloud using the most cost-effective
+              solutions possible.
+            </p>
             <span class="sub2-medium">Here’s how...</span>
             <ol style="list-style: circle; padding: 1rem 0 0 1.5rem">
-              <li>Understanding your DevOps needs</li>
+              <li>Understanding your individual DevOps needs</li>
               <li>
                 Implementing enterprise-grade, security-first applications
               </li>
               <li>Building complete cloud applications + systems</li>
               <li>Integrating existing software</li>
               <li>Automating repetitive tasks + processes</li>
+              <li>Leveraging AI in the cloud</li>
               <li>Maintaining all cloud + system infrastructure</li>
               <li>
                 Creating distributed systems leveraging event-driven
                 architecture + micro-services
               </li>
-              <li>Developing Shopify + custom cloud builds</li>
+              <li>Incorporating cloud technologies into your Shopify builds</li>
             </ol>
           </div>
         </div>
@@ -151,7 +153,7 @@
           li::marker {
             font-size: 20px;
           }
-          li:not(:first-of-type) {
+          li {
             padding: 1rem 0;
           }
         }
@@ -168,26 +170,20 @@
         color: var(--black-02);
         margin: 0 0 var(--space-xl) auto;
       }
+
       @include breakpoint("md") {
         flex-direction: column;
         .lower-text-left {
+          min-width: 100%;
           margin: var(--space-lg) 0 0 0;
-          min-width: 70%;
         }
         .lower-text-right {
-          margin: var(--space-xl) 0 0 0;
-          padding-bottom: var(--space-xxxl);
-          min-width: 70%;
-        }
-      }
-      @include breakpoint("md") {
-        flex-direction: column;
-        .lower-text-left {
+          padding-bottom: var(--space-xxl);
           min-width: 100%;
-        }
-        .lower-text-right {
-          padding-bottom: var(--space-xxxl);
-          min-width: 100%;
+          margin: 0 0 var(--space-lg) auto;
+          li {
+            list-style: none;
+          }
         }
       }
     }
