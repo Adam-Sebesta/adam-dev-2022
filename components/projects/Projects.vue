@@ -40,6 +40,7 @@ const maxProjects = computed((): Number => {
 });
 </script>
 <style lang="scss">
+@import "../assets/style/variables";
 .projects {
   display: flex;
   flex-direction: column;
@@ -66,7 +67,7 @@ const maxProjects = computed((): Number => {
     width: 100%;
     color: black;
     position: relative;
-    
+
     &:hover {
       .active {
         transform: translateX(0%);
@@ -90,9 +91,9 @@ const maxProjects = computed((): Number => {
     }
     .project-lower {
       display: flex;
-      width: 35%;
+      width: 45%;
       justify-content: space-between;
-      margin: 0 0 calc(var(--space-sm) + 3px) auto;
+      margin: var(--space-sm) 0 calc(var(--space-sm) + 3px) auto;
       .stack {
         margin-left: var(--space-xs);
       }
