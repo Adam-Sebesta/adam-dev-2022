@@ -37,6 +37,7 @@ Finally, I was responsible for orchestrating vendors and managing relationships 
     sector: "EdTech",
     year: "2023",
     to: "/projects/reading-reimagined",
+    liveLink: "https://aerdf.org/programs/reading-reimagined/",
     architecture: {
       images: [
         { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
@@ -60,13 +61,14 @@ To provide analytics on customer behavior and inventory management, I integrated
 Finally, I developed a companion Typescript app that integrated with the "Back In Stock" service, providing a seamless experience for customers to enroll in waitlists directly from the Shopify store. The app also allowed the client to manage waitlist enrollments and notifications through the Shopify admin panel.
 <br/>
 <br/>
-Overall, working with Aeyde was an exciting project that challenged me to apply my Shopify development skills to build a cloud-native solution that met the client's business requirements while providing an excellent customer experience. The project allowed me to showcase my expertise in Shopify Plus store configuration and complete solution design of a cloud-native service. Reviving the broken system and creating a future-proof solution was a rewarding experience`,
+Overall, working with Aeyde was an exciting project that challenged me to apply my Shopify development skills to build a cloud-native solution that met the client's business requirements while providing an excellent customer experience. The project allowed me to showcase my expertise in Shopify Plus store configuration and complete solution design of a cloud-native service. Reviving the broken system and creating a future-proof solution was a rewarding experience.`,
     title: "Aeyde",
     stack: ["AWS", "Shopify Plus", "Typescript"],
     length: "short",
     sector: "Fashion",
     year: "2023",
     to: "/projects/aeyde",
+    liveLink: "https://aeyde.com/",
     measurables: {},
     architecture: {
       images: [
@@ -95,6 +97,7 @@ Overall, the Halotrade project challenged me to apply my cloud engineering skill
     sector: "Finance",
     year: "2022",
     to: "/projects/halotrade",
+    liveLink: "https://halotrade.io/",
   },
   emkfit: {
     textColor: "black",
@@ -131,6 +134,7 @@ The online booking service I developed included unique logic for "no shows" and 
     sector: "Golf",
     year: "2022",
     to: "/projects/progolf-berin",
+    liveLink: "https://progolfberlin.com/",
     measurables: {},
     architecture: {
       images: [
