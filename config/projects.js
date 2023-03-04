@@ -8,6 +8,7 @@ export default {
     sector: "AI Art",
     year: "2023",
     to: "/projects/manifest-ai",
+    wip: true,
   },
   "reading-reimagined": {
     textColor: "black",
@@ -73,57 +74,6 @@ Overall, working with Aeyde was an exciting project that challenged me to apply 
       ],
     },
   },
-  "progolf-berin": {
-    textColor: "black",
-    desc: `I had the opportunity to work with Pro Golf Berlin, a leading Golf Simulator company based in Berlin, to help them streamline their daily operations and consolidate their systems. My work for this project involved configuring their Shopify store, custom theme configuration, and developing an integrated online booking service.
-<br/>
-<br/>
-The challenge for the client was the inefficiency caused by in-person cash transactions, which slowed down their business. The solution I designed and developed enabled customers to book and pay instantly online, eliminating the need for in-person transactions. This streamlined their daily operations and made it easier for customers to book sessions, saving time for both the client and their customers.
-<br/>
-<br/>
-The online booking service I developed included unique logic for "no shows" and customer cancellations, which helped the client to manage their bookings efficiently. Additionally, the integration of the online booking service allowed the client to sell their merchandise alongside the bookings, which was not possible before. This added revenue stream was an added benefit for the client and helped to improve their bottom line.`,
-    title: "ProGolf Berlin",
-    stack: ["Shopify", "Javascript", "CSS"],
-    length: "short",
-    sector: "Golf",
-    year: "2022",
-    to: "/projects/progolf-berin",
-    measurables: {},
-    architecture: {
-      images: [
-        { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
-      ],
-    },
-  },
-  "skin-kravings": {
-    textColor: "black",
-    desc: `As a Shopify developer, I had the pleasure of working with Skin Kravings, an all-natural curated cosmetics company. My role was to configure their Shopify Plus store, including store migration, app configuration, custom theme changes, and providing general guidance to the client.
-br/>
-br/>
-The project started with configuring the Shopify Plus store, which included setting up the necessary features, including payment and shipping options, product pages, and collections. I worked with the client to ensure that their store met their business requirements and provided a seamless customer experience.
-br/>
-br/>
-Next, I migrated the client's existing store to Shopify Plus, ensuring that all data was transferred smoothly and without any data loss. I tested the migrated store to ensure that everything was working correctly, including product images, descriptions, and pricing.
-br/>
-br/>
-I also configured several apps to improve the client's store, including email marketing, customer reviews, and social media integrations. I ensured that the apps were compatible with the client's store and that they added value to the customer experience.
-br/>
-br/>
-I worked on several custom theme changes, including optimizing the theme for page speed, adding custom banners and images, and customizing the checkout process. I ensured that the changes were implemented seamlessly and that they did not negatively impact the customer experience.
-br/>
-br/>
-Finally, I provided general guidance to the client on best practices for managing their Shopify Plus store, including optimizing the store for search engines, managing inventory, and handling customer support.
-br/>
-br/>
-Overall, working with Skin Kravings was an exciting project that challenged me to apply my Shopify development skills to build a store that met the client's business requirements while providing an excellent customer experience. The project allowed me to showcase my expertise in Shopify Plus store configuration, store migration, app configuration, custom theme changes, and general guidance for the client.`,
-    title: "Skin Kravings",
-    stack: ["Shopify Plus", "Javascript", "CSS"],
-    length: "short",
-    sector: "Beauty",
-    year: "2022",
-    to: "/projects/skin-kravings",
-    liveLink: "https://cleyobeauty.com/",
-  },
   halotrade: {
     textColor: "black",
     desc: `I had the opportunity to lead the development of Halotrade, an enterprise-grade supply chain application. As the lead developer, I was personally responsible for the infrastructure planning, full-stack development, and DevOps of the application. This project was particularly challenging as it required me to apply my cloud engineering skills in a globally distributed environment, using Microsoft Azure.
@@ -140,7 +90,7 @@ Finally, as the DevOps lead, I had to ensure that the application was built usin
 <br/>
 Overall, the Halotrade project challenged me to apply my cloud engineering skills to build an enterprise-grade application that met the business requirements while optimizing for cost and performance. The experience of working with Microsoft Azure in a globally distributed environment has expanded my cloud engineering expertise and prepared me for future cloud engineering projects.`,
     title: "Halotrade",
-    stack: ["Nuxt", "Azure", "Node", "NoSql"],
+    stack: ["Azure", "Serverless", "Domain Driven Design"],
     length: "short",
     sector: "Finance",
     year: "2022",
@@ -166,6 +116,56 @@ The Shopify store I developed for Emkfit provided a seamless customer experience
     to: "/projects/emkfit",
     liveLink: "https://www.emkfit.ca",
   },
+  "progolf-berin": {
+    textColor: "black",
+    desc: `I had the opportunity to work with Pro Golf Berlin, a leading Golf Simulator company based in Berlin, to help them streamline their daily operations and consolidate their systems. My work for this project involved configuring their Shopify store, custom theme configuration, and developing an integrated online booking service.
+<br/>
+<br/>
+The challenge for the client was the inefficiency caused by in-person cash transactions, which slowed down their business. The solution I designed and developed enabled customers to book and pay instantly online, eliminating the need for in-person transactions. This streamlined their daily operations and made it easier for customers to book sessions, saving time for both the client and their customers.
+<br/>
+<br/>
+The online booking service I developed included unique logic for "no shows" and customer cancellations, which helped the client to manage their bookings efficiently. Additionally, the integration of the online booking service allowed the client to sell their merchandise alongside the bookings, which was not possible before. This added revenue stream was an added benefit for the client and helped to improve their bottom line.`,
+    title: "ProGolf Berlin",
+    stack: ["Shopify", "Javascript", "CSS"],
+    length: "short",
+    sector: "Golf",
+    year: "2022",
+    to: "/projects/progolf-berin",
+    measurables: {},
+    architecture: {
+      images: [
+        { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
+      ],
+    },
+  },
+  "skin-kravings": {
+    textColor: "black",
+    desc: `As a Shopify developer, I had the pleasure of working with Skin Kravings, an all-natural curated cosmetics company. My role was to configure their Shopify Plus store, including store migration, app configuration, custom theme changes, and providing general guidance to the client.
+<br/>
+<br/>
+The project started with configuring the Shopify Plus store, which included setting up the necessary features, including payment and shipping options, product pages, and collections. I worked with the client to ensure that their store met their business requirements and provided a seamless customer experience.
+<br/>
+<br/>
+Next, I migrated the client's existing store to Shopify Plus, ensuring that all data was transferred smoothly and without any data loss. I tested the migrated store to ensure that everything was working correctly, including product images, descriptions, and pricing.
+<br/>
+<br/>
+I also configured several apps to improve the client's store, including email marketing, customer reviews, and social media integrations. I ensured that the apps were compatible with the client's store and that they added value to the customer experience.
+<br/>
+<br/>
+I worked on several custom theme changes, including optimizing the theme for page speed, adding custom banners and images, and customizing the checkout process. I ensured that the changes were implemented seamlessly and that they did not negatively impact the customer experience.
+<br/>
+<br/>
+Finally, I provided general guidance to the client on best practices for managing their Shopify Plus store, including optimizing the store for search engines, managing inventory, and handling customer support.
+`,
+    title: "Skin Kravings",
+    stack: ["Shopify Plus", "Javascript", "CSS"],
+    length: "short",
+    sector: "Beauty",
+    year: "2022",
+    to: "/projects/skin-kravings",
+    liveLink: "https://cleyobeauty.com/",
+  },
+
   "5oz": {
     textColor: "black",
     desc: `Provided Full-Stack refinements onto an existing cargo website. Included web and mobile responsiveness changes, and the addition of a Microsoft Azure hosted serverless newsletter sign up form.`,

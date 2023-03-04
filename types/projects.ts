@@ -9,6 +9,7 @@ export interface Project {
   sector: string;
   year: string;
   liveLink?: string;
+  wip: boolean;
 }
 
 export interface IProjectOb {

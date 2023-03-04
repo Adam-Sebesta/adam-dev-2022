@@ -25,7 +25,7 @@
         <button
           @click="readMore = true"
           class="projects-continue-reading"
-          v-if="!readMore"
+          v-if="!readMore && !project.wip"
         >
           Continue Reading
         </button>
@@ -66,9 +66,9 @@ const readMore = ref(false);
   width: 100%;
   background-color: var(--white-01);
   .project-info-main {
-    min-height: 250px;
+    min-height: 245px;
     display: flex;
-    width: 80%;
+    width: 55%;
     flex-direction: column;
     position: relative;
     justify-content: flex-end;
@@ -77,7 +77,7 @@ const readMore = ref(false);
       font-size: 12px;
       text-overflow: ellipsis;
       max-height: 100px;
-      transition: max-height 0.5s ease-out;
+      // transition: max-height 0.5s ease-out;
       overflow: hidden;
       &.read-more {
         max-height: 100%;
@@ -90,7 +90,7 @@ const readMore = ref(false);
       color: var(--black-01);
       font-size: 12px;
       font-weight: 600;
-      margin: var(--space-sm) 0;
+      margin: var(--space-md) 0;
       cursor: pointer;
       &:hover {
         text-decoration: underline;
@@ -122,6 +122,28 @@ const readMore = ref(false);
       transition: transform 1s ease-out;
       &:hover {
         transform: scale3d(1.01, 1.01, 1.01);
+      }
+    }
+  }
+}
+@include breakpoint("md") {
+  .page.project {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    .project-info-main {
+      width: 100%;
+      padding: var(--page-margin);
+      margin-top: calc(35vh - 250px);
+      .projects-continue-reading {
+        margin-bottom: var(--page-margin);
+      }
+    }
+    .project-image-main {
+      width: 100%;
+      height: 65vh;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }

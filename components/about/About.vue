@@ -10,14 +10,14 @@
             Successful Businesses Use Adam’s Services
           </div>
           <div class="lower-text-right text2-regular">
-            <p>
+            <p class="about-lower-headline">
               I bring increased efficiency, flexibility, and security to
               enterprises of all shapes and sizes. I help my clients understand,
               integrate, and leverage the cloud using the most cost-effective
               solutions possible.
             </p>
             <span class="sub2-medium">Here’s how...</span>
-            <ol style="list-style: circle; padding: 1rem 0 0 1.5rem">
+            <ol class="heres-how-list">
               <li>Understanding your individual DevOps needs</li>
               <li>
                 Implementing enterprise-grade, security-first applications
@@ -42,7 +42,7 @@
 
           <ol class="text2-regular lower-text-right" type="1">
             <li>
-              <span class="sub2-medium">Explore</span><br />
+              <span class="sub1-medium">Explore</span><br />
               I know that many of the solutions I provide can do wonders for
               building next-level operational efficiency, however, you should be
               convinced of this too. That’s why I take the time to understand
@@ -154,7 +154,7 @@
             font-size: 20px;
           }
           li {
-            padding: 1rem 0;
+            padding: var(--space-sm) 0;
           }
         }
         .sub1-medium {
@@ -169,6 +169,15 @@
         width: 45%;
         color: var(--black-02);
         margin: 0 0 var(--space-xl) auto;
+        .heres-how-list {
+          margin: var(--space-sm) 0 0 var(--space-lg);
+          li {
+            list-style: circle;
+          }
+        }
+        .about-lower-headline {
+          margin: var(--space-md) 0;
+        }
       }
 
       @include breakpoint("md") {
@@ -178,12 +187,21 @@
           margin: var(--space-lg) 0 0 0;
         }
         .lower-text-right {
-          padding-bottom: var(--space-xxl);
+          padding-bottom: var(--space-lg);
           min-width: 100%;
           margin: 0 0 var(--space-lg) auto;
           li {
             list-style: none;
           }
+        }
+        #About
+          > div
+          > div.lower-text
+          > div:nth-child(1)
+          > div.lower-text-right.text2-regular
+          > ol
+          > li:nth-child(1) {
+          list-style: circle;
         }
       }
     }
