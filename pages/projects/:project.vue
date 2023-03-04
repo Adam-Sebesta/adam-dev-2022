@@ -1,9 +1,6 @@
 <template tabIndex="0">
-  <div :class="'page project' + (readMore ? ' read-more' : '')">
-    <div
-      class="project-info-main text-wrapper"
-      :style="{ color: project.textColor }"
-    >
+  <div v-if="project" :class="'page project' + (readMore ? ' read-more' : '')">
+    <div class="project-info-main text-wrapper">
       <div class="project-header-arrows">
         <nuxt-link class="project-arrow-link" to="/"
           ><span class="baunk chevron">&#x3c;</span>
@@ -87,6 +84,7 @@ const readMore = ref(false);
     position: relative;
     justify-content: flex-end;
     margin: var(--space-md) var(--page-margin);
+    color: var(--black-01);
     .project-header-arrows {
       display: flex;
       justify-content: space-between;
@@ -183,7 +181,7 @@ const readMore = ref(false);
       background: -moz-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* FF3.6+ */
@@ -192,42 +190,42 @@ const readMore = ref(false);
         left top,
         right top,
         color-stop(0%, rgba(255, 255, 255, 0)),
-        color-stop(50%, rgba(255, 255, 255, 0.1)),
+        color-stop(50%, rgba(255, 255, 255, 0.3)),
         color-stop(99%, rgba(128, 186, 232, 0)),
         color-stop(100%, rgba(125, 185, 232, 0))
       ); /* Chrome,Safari4+ */
       background: -webkit-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* Chrome10+,Safari5.1+ */
       background: -o-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* Opera 11.10+ */
       background: -ms-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* IE10+ */
       background: linear-gradient(
         to right,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* W3C */
       background: linear-gradient(
         66deg,
         hsla(0, 0%, 100%, 0) 0,
-        hsla(0, 0%, 100%, 0.1) 50%,
+        hsla(0, 0%, 100%, 0.3) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0)
       );
@@ -235,7 +233,7 @@ const readMore = ref(false);
     }
     @keyframes slide {
       0% {
-        transform: translate(0%, 0%);
+        transform: translate(-100%, 0%);
       }
       100% {
         transform: translate(100%, 0%);

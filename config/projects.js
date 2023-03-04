@@ -124,7 +124,7 @@ The Shopify store I developed for Emkfit provided a seamless customer experience
     liveLink: "https://www.emkfit.ca",
     next: "/projects/progolf-berlin",
   },
-  "progolf-berin": {
+  "progolf-berlin": {
     textColor: "black",
     desc: `I had the opportunity to work with Pro Golf Berlin, a leading Golf Simulator company based in Berlin, to help them streamline their daily operations and consolidate their systems. My work for this project involved configuring their Shopify store, custom theme configuration, and developing an integrated online booking service.
 <br/>
@@ -176,7 +176,6 @@ Finally, I provided general guidance to the client on best practices for managin
     next: "/projects/5oz",
     liveLink: "https://cleyobeauty.com/",
   },
-
   "5oz": {
     textColor: "black",
     desc: `Provided Full-Stack refinements onto an existing cargo website. Included web and mobile responsiveness changes, and the addition of a Microsoft Azure hosted serverless newsletter sign up form.`,
@@ -225,19 +224,19 @@ The result was a highly secure and efficient application that was deployed to te
     liveLink:
       "https://play.google.com/store/apps/details?id=org.nativescript.roam&ah=a2IKKW6jUgH9cYUv2x3-Bc2J44I",
   },
-  //   streamhub: {
-  //     textColor: "black",
-  //     desc: `My culminating project from the Le Wagon Full-Stack Development Boot Camp in Berlin. With a focus on intuitive UI (1-click login), and
-  // a clean, refined design, the app consolidated all
-  // of a users followed streamers from Twitch, Mixer,
-  // and Youtube Gaming into one hub.
-  // .`,
-  //     title: "StreamHub",
-  //     stack: ["Ruby", "Rails", "JS"],
-  //     img: "streamHub_prev.jpg",
-  //     length: "short",
-  //     sector: "Video",
-  //     year: "2020",
-  //     to: "/projects/streamhub",
-  // },
+  streamhub: {
+    textColor: "black",
+    desc: `My culminating project from the Le Wagon Full-Stack Development Boot Camp in Berlin. With a focus on intuitive UI (1-click login), and
+  a clean, refined design, the app consolidated all
+  of a users followed streamers from Twitch, Mixer,
+  and Youtube Gaming into one hub.
+  .`,
+    title: "StreamHub",
+    stack: ["Ruby", "Rails", "JS"],
+    img: "streamHub_prev.jpg",
+    length: "short",
+    sector: "Video",
+    year: "2020",
+    to: "/projects/streamhub",
+  },
 };
