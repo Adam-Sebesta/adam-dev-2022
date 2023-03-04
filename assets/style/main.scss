@@ -59,6 +59,9 @@ body {
 a {
   text-decoration: none;
 }
+.baunk {
+  font-family: var(--heading-font-family);
+}
 
 h1,
 h2,
@@ -228,4 +231,8 @@ h5 {
 .full-length-divider {
   width: 4000px;
   transform: translateX(-2000px);
+}
+
+.flex {
+  display: flex;
 }

@@ -8,6 +8,7 @@ export default {
     sector: "AI Art",
     year: "2023",
     to: "/projects/manifest-ai",
+    next: "/projects/reading-reimagined",
     wip: true,
   },
   "reading-reimagined": {
@@ -38,6 +39,7 @@ Finally, I was responsible for orchestrating vendors and managing relationships 
     year: "2023",
     to: "/projects/reading-reimagined",
     liveLink: "https://aerdf.org/programs/reading-reimagined/",
+    next: "/projects/aeyde",
     architecture: {
       images: [
         { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
@@ -69,6 +71,7 @@ Overall, working with Aeyde was an exciting project that challenged me to apply 
     year: "2023",
     to: "/projects/aeyde",
     liveLink: "https://aeyde.com/",
+    next: "/projects/halotrade",
     measurables: {},
     architecture: {
       images: [
@@ -98,6 +101,7 @@ Overall, the Halotrade project challenged me to apply my cloud engineering skill
     year: "2022",
     to: "/projects/halotrade",
     liveLink: "https://halotrade.io/",
+    next: "/projects/emkfit",
   },
   emkfit: {
     textColor: "black",
@@ -118,6 +122,7 @@ The Shopify store I developed for Emkfit provided a seamless customer experience
     year: "2022",
     to: "/projects/emkfit",
     liveLink: "https://www.emkfit.ca",
+    next: "/projects/progolf-berlin",
   },
   "progolf-berin": {
     textColor: "black",
@@ -135,6 +140,7 @@ The online booking service I developed included unique logic for "no shows" and 
     year: "2022",
     to: "/projects/progolf-berin",
     liveLink: "https://progolfberlin.com/",
+    next: "/projects/skin-kravings",
     measurables: {},
     architecture: {
       images: [
@@ -167,6 +173,7 @@ Finally, I provided general guidance to the client on best practices for managin
     sector: "Beauty",
     year: "2022",
     to: "/projects/skin-kravings",
+    next: "/projects/5oz",
     liveLink: "https://cleyobeauty.com/",
   },
 
@@ -192,6 +199,7 @@ Finally, I provided general guidance to the client on best practices for managin
     sector: "Crypto",
     year: "2021",
     to: "/projects/spectral",
+    next: "/projects/roam",
     liveLink: "https://spectral.finance",
   },
   roam: {
@@ -213,22 +221,23 @@ The result was a highly secure and efficient application that was deployed to te
     sector: "Travel",
     year: "2021",
     to: "/projects/roam",
+    next: "/projects/manifest-ai",
     liveLink:
       "https://play.google.com/store/apps/details?id=org.nativescript.roam&ah=a2IKKW6jUgH9cYUv2x3-Bc2J44I",
   },
-  streamhub: {
-    textColor: "black",
-    desc: `My culminating project from the Le Wagon Full-Stack Development Boot Camp in Berlin. With a focus on intuitive UI (1-click login), and
-a clean, refined design, the app consolidated all
-of a users followed streamers from Twitch, Mixer,
-and Youtube Gaming into one hub.
-.`,
-    title: "StreamHub",
-    stack: ["Ruby", "Rails", "JS"],
-    img: "streamHub_prev.jpg",
-    length: "short",
-    sector: "Video",
-    year: "2020",
-    to: "/projects/streamhub",
-  },
+  //   streamhub: {
+  //     textColor: "black",
+  //     desc: `My culminating project from the Le Wagon Full-Stack Development Boot Camp in Berlin. With a focus on intuitive UI (1-click login), and
+  // a clean, refined design, the app consolidated all
+  // of a users followed streamers from Twitch, Mixer,
+  // and Youtube Gaming into one hub.
+  // .`,
+  //     title: "StreamHub",
+  //     stack: ["Ruby", "Rails", "JS"],
+  //     img: "streamHub_prev.jpg",
+  //     length: "short",
+  //     sector: "Video",
+  //     year: "2020",
+  //     to: "/projects/streamhub",
+  // },
 };

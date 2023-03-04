@@ -1,11 +1,19 @@
 <template tabIndex="0">
   <div :class="'page project' + (readMore ? ' read-more' : '')">
-    <!-- <div class="back-arrow-wrapper"></div> -->
-    <!-- <div class="next-project-arrow"></div> -->
     <div
       class="project-info-main text-wrapper"
       :style="{ color: project.textColor }"
     >
+      <div class="project-header-arrows">
+        <nuxt-link class="project-arrow-link" to="/"
+          ><span class="baunk chevron">&#x3c;</span>
+          <span> Back</span></nuxt-link
+        >
+        <nuxt-link class="project-arrow-link" :to="project.next"
+          ><span>Next </span
+          ><span class="baunk chevron">&#x3e;</span></nuxt-link
+        >
+      </div>
       <div class="translate-box translate">
         <h3 class="headline sub2-regular">{{ project.title }}</h3>
 
@@ -33,6 +41,7 @@
       </div>
     </div>
     <div class="project-image-main" :style="{}">
+      <div class="glare-load"></div>
       <img
         :src="`../../../projects/${projectTitle}/main-${projectTitle}.jpg`"
         alt="Project Image"
@@ -64,11 +73,12 @@ const readMore = ref(false);
   &.read-more {
     .project-info-main {
       p {
-        max-height: 100%;
+        max-height: calc(100% - 100px);
         overflow: auto;
       }
     }
   }
+
   .project-info-main {
     min-height: 245px;
     display: flex;
@@ -76,7 +86,29 @@ const readMore = ref(false);
     flex-direction: column;
     position: relative;
     justify-content: flex-end;
-    padding: var(--space-md) var(--page-margin);
+    margin: var(--space-md) var(--page-margin);
+    .project-header-arrows {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: var(--space-md);
+      position: absolute;
+      top: 0;
+      left: 0;
+      .project-arrow-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        span:first-child {
+          margin-right: var(--space-sm);
+        }
+        span.chevron {
+          padding-top: 0.2rem;
+          font-size: 16px;
+        }
+      }
+    }
     .live-link {
       width: 20px;
       height: 20px;
@@ -132,23 +164,26 @@ const readMore = ref(false);
       height: 100vh;
       object-fit: cover;
       transition: transform 1s ease-out;
+      position: relative;
+      z-index: 2;
       &:hover {
         transform: scale3d(1.01, 1.01, 1.01);
       }
     }
-    &:after {
-      content: "";
+    .glare-load {
       top: 0;
-      transform: translateX(100%);
+      left: 0;
+      display: block;
       width: 100%;
       height: 100%;
       position: absolute;
       z-index: 1;
-      animation: slide 2s infinite;
+      animation: slide 2.5s ease infinite;
+
       background: -moz-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.1) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* FF3.6+ */
@@ -157,46 +192,53 @@ const readMore = ref(false);
         left top,
         right top,
         color-stop(0%, rgba(255, 255, 255, 0)),
-        color-stop(50%, rgba(255, 255, 255, 0.8)),
+        color-stop(50%, rgba(255, 255, 255, 0.1)),
         color-stop(99%, rgba(128, 186, 232, 0)),
         color-stop(100%, rgba(125, 185, 232, 0))
       ); /* Chrome,Safari4+ */
       background: -webkit-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.1) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* Chrome10+,Safari5.1+ */
       background: -o-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.1) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* Opera 11.10+ */
       background: -ms-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.1) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* IE10+ */
       background: linear-gradient(
         to right,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.1) 50%,
         rgba(128, 186, 232, 0) 99%,
         rgba(125, 185, 232, 0) 100%
       ); /* W3C */
+      background: linear-gradient(
+        66deg,
+        hsla(0, 0%, 100%, 0) 0,
+        hsla(0, 0%, 100%, 0.1) 50%,
+        rgba(128, 186, 232, 0) 99%,
+        rgba(125, 185, 232, 0)
+      );
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 );
     }
     @keyframes slide {
       0% {
-        transform: translateX(-100%);
+        transform: translate(0%, 0%);
       }
       100% {
-        transform: translateX(100%);
+        transform: translate(100%, 0%);
       }
     }
   }

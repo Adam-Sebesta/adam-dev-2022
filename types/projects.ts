@@ -3,13 +3,14 @@ export interface Project {
   desc: string;
   stack: string[];
   title: string;
-  img: string;
+  img?: string;
   length: string;
   to: string;
   sector: string;
   year: string;
   liveLink?: string;
-  wip: boolean;
+  wip?: boolean;
+  next?: string;
 }
 
 export interface IProjectOb {
