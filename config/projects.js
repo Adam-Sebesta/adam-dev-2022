@@ -186,6 +186,7 @@ Finally, I provided general guidance to the client on best practices for managin
     sector: "Art",
     year: "2022",
     to: "/projects/5oz",
+    to: "/projects/spectral",
     liveLink: "https://www.5oz.com/",
   },
   spectral: {
@@ -224,19 +225,19 @@ The result was a highly secure and efficient application that was deployed to te
     liveLink:
       "https://play.google.com/store/apps/details?id=org.nativescript.roam&ah=a2IKKW6jUgH9cYUv2x3-Bc2J44I",
   },
-  streamhub: {
-    textColor: "black",
-    desc: `My culminating project from the Le Wagon Full-Stack Development Boot Camp in Berlin. With a focus on intuitive UI (1-click login), and
-  a clean, refined design, the app consolidated all
-  of a users followed streamers from Twitch, Mixer,
-  and Youtube Gaming into one hub.
-  .`,
-    title: "StreamHub",
-    stack: ["Ruby", "Rails", "JS"],
-    img: "streamHub_prev.jpg",
-    length: "short",
-    sector: "Video",
-    year: "2020",
-    to: "/projects/streamhub",
-  },
+  // streamhub: {
+  //   textColor: "black",
+  //   desc: `My culminating project from the Le Wagon Full-Stack Development Boot Camp in Berlin. With a focus on intuitive UI (1-click login), and
+  // a clean, refined design, the app consolidated all
+  // of a users followed streamers from Twitch, Mixer,
+  // and Youtube Gaming into one hub.
+  // .`,
+  //   title: "StreamHub",
+  //   stack: ["Ruby", "Rails", "JS"],
+  //   img: "streamHub_prev.jpg",
+  //   length: "short",
+  //   sector: "Video",
+  //   year: "2020",
+  //   to: "/projects/streamhub",
+  // },
 };
