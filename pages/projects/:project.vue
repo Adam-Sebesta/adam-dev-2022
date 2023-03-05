@@ -244,15 +244,20 @@ const readMore = ref(false);
 @include breakpoint("md") {
   .page.project {
     flex-direction: column-reverse;
-    justify-content: space-between;
-
+    justify-content: flex-end;
+    &.read-more {
+      .project-info-main {
+        height: unset;
+      }
+    }
     .project-info-main {
       width: calc(100% - (2 * var(--page-margin)));
-      // padding: var(--page-margin);
       margin-top: var(--page-margin);
+      height: unset;
       min-height: unset;
       .project-header-arrows {
-        top: calc(-2 * var(--page-margin));
+        position: unset;
+        margin-bottom: var(--space-sm);
       }
       .projects-continue-reading {
         margin: var(--page-margin) 0 0 0;
