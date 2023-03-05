@@ -37,7 +37,7 @@
         </div>
         <div class="lower-text-item">
           <div class="sub1-medium lower-text-item-header">
-            Adam’s Easy 3-Step Process
+            Adam’s Simplified 3-Step Process
           </div>
 
           <ol class="text2-regular lower-text-right" type="1">

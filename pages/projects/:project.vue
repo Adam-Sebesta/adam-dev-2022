@@ -245,10 +245,15 @@ const readMore = ref(false);
   .page.project {
     flex-direction: column-reverse;
     justify-content: space-between;
+
     .project-info-main {
-      width: 100%;
-      padding: var(--page-margin);
-      margin-top: calc(35vh - 250px);
+      width: calc(100% - (2 * var(--page-margin)));
+      // padding: var(--page-margin);
+      margin-top: var(--page-margin);
+      min-height: unset;
+      .project-header-arrows {
+        top: calc(-2 * var(--page-margin));
+      }
       .projects-continue-reading {
         margin: var(--page-margin) 0 0 0;
       }

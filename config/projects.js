@@ -186,7 +186,7 @@ Finally, I provided general guidance to the client on best practices for managin
     sector: "Art",
     year: "2022",
     to: "/projects/5oz",
-    to: "/projects/spectral",
+    next: "/projects/spectral",
     liveLink: "https://www.5oz.com/",
   },
   spectral: {
