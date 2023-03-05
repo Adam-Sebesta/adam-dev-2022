@@ -26,7 +26,8 @@
   width: 100%;
   display: none;
   @media screen and (max-width: 560px) {
-    display: unset;
+    display: flex;
+    width: unset;
   }
 }
 </style>
