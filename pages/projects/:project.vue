@@ -57,6 +57,23 @@ const route = useRoute();
 const projectTitle: string | string[] = route.params.project;
 const project: Project = projects[projectTitle];
 const readMore = ref(false);
+
+const checkIfImageLoaded = (image: HTMLImageElement): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    if (image.complete) {
+      resolve();
+    } else {
+      image.addEventListener("load", resolve);
+      image.addEventListener("error", reject);
+    }
+  });
+};
+onMounted(() => {
+  const image = document.querySelector(".project-image-main img");
+  checkIfImageLoaded(image).then(() => {
+    document.querySelector(".glare-load").classList.add("hidden");
+  });
+});
 </script>
 
 <style lang="scss">
@@ -177,7 +194,9 @@ const readMore = ref(false);
       position: absolute;
       z-index: 1;
       animation: slide 2.5s ease infinite;
-
+      &.hidden {
+        display: none;
+      }
       background: -moz-linear-gradient(
         left,
         rgba(255, 255, 255, 0) 0%,

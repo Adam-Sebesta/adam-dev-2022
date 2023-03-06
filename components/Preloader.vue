@@ -33,5 +33,8 @@ onMounted(() => {
   .preloader_logo {
     width: 100px;
   }
+  &.fadeout {
+    animation: fadeOut 750ms ease-out forwards;
+  }
 }
 </style>

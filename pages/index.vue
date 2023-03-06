@@ -15,9 +15,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
-}
-.fadeout {
-  display: none;
 }
 </style>
