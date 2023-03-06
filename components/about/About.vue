@@ -19,17 +19,22 @@
             <span class="sub2-medium">Here’s how...</span>
             <ol class="heres-how-list">
               <li>
-                Providing cloud onboarding + strategy to get you started
-                follwing best practices
+                Providing onboarding to get you started in the cloud following
+                best practices
               </li>
               <li>
                 Designing + building complete enterprise-grade, security-first
                 cloud applications
               </li>
-              <li>Integrating existing software</li>
-              <li>Automating repetitive tasks + processes</li>
-              <li>Leveraging AI in the cloud</li>
-              <li>Maintaining + upgrading all current cloud infrastructure</li>
+              <li>Integrating existing your software, how you need it</li>
+              <li>Automating repetitive tasks + processes saving you time</li>
+              <li>
+                Leveraging AI in the cloud to unlock even greater efficiency
+              </li>
+              <li>
+                Maintaining + upgrading all current cloud infrastructure,
+                increasing security and savings
+              </li>
               <li>
                 Creating distributed systems leveraging event-driven
                 architecture + micro-services
