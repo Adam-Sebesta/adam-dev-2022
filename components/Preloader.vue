@@ -34,7 +34,7 @@ onMounted(() => {
     width: 100px;
   }
   &.fadeout {
-    animation: fadeOut 650ms ease-out forwards;
+    animation: fadeOut 450ms ease-out forwards;
   }
 }
 </style>

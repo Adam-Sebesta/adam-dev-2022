@@ -18,15 +18,18 @@
             </p>
             <span class="sub2-medium">Here’s how...</span>
             <ol class="heres-how-list">
-              <li>Understanding your individual DevOps needs</li>
               <li>
-                Implementing enterprise-grade, security-first applications
+                Providing cloud onboarding + strategy to get you started
+                follwing best practices
               </li>
-              <li>Building complete cloud applications + systems</li>
+              <li>
+                Designing + building complete enterprise-grade, security-first
+                cloud applications
+              </li>
               <li>Integrating existing software</li>
               <li>Automating repetitive tasks + processes</li>
               <li>Leveraging AI in the cloud</li>
-              <li>Maintaining all cloud + system infrastructure</li>
+              <li>Maintaining + upgrading all current cloud infrastructure</li>
               <li>
                 Creating distributed systems leveraging event-driven
                 architecture + micro-services
