@@ -69,6 +69,7 @@ const checkIfImageLoaded = (image: HTMLImageElement): Promise<void> => {
   });
 };
 onMounted(() => {
+  readMore.value = false;
   const image = document.querySelector(".project-image-main img");
   checkIfImageLoaded(image).then(() => {
     document.querySelector(".glare-load").classList.add("hidden");
@@ -276,7 +277,7 @@ onMounted(() => {
       min-height: unset;
       .project-header-arrows {
         position: unset;
-        margin-bottom: var(--space-sm);
+        margin-bottom: var(--space-lg);
       }
       .projects-continue-reading {
         margin: var(--page-margin) 0 0 0;
@@ -297,7 +298,7 @@ onMounted(() => {
     }
     .project-image-main {
       width: 100%;
-      height: 65vh;
+      height: 60vh;
       img {
         width: 100%;
         height: 100%;

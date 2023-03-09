@@ -33,7 +33,7 @@ As part of my responsibilities, I also wrote comprehensive product documentation
 <br/>
 Finally, I was responsible for orchestrating vendors and managing relationships with third-party suppliers. This involved negotiating contracts, managing vendor performance, and ensuring that all vendors were aligned with the project's goals and objectives.`,
     title: "Reading Reimagined",
-    stack: ["AWS", "Terraform", "Typescript"],
+    stack: ["AWS", "Terraform", "Lucidchart"],
     length: "short",
     sector: "EdTech",
     year: "2023",

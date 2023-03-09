@@ -87,8 +87,8 @@ const heresHowList = [
   "Integrating existing your software, when and how you need it.",
   "Automating repetitive tasks + processes saving you time.",
   "Leveraging AI in the cloud to unlock even greater efficiency.",
-  "Maintaining + upgrading all current cloud infrastructure",
-  "increasing security and savings.",
+  "Maintaining + upgrading all current cloud infrastructure.",
+  "Security and Monthly bill auditing.",
   "Creating distributed systems leveraging event-driven architecture + micro-services.",
   "Incorporating cloud technologies into your Shopify builds.",
 ];
