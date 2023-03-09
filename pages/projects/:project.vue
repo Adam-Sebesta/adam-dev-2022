@@ -138,7 +138,7 @@ onMounted(() => {
     p {
       font-size: 12px;
       text-overflow: ellipsis;
-      max-height: 100px;
+      max-height: 80px;
       // transition: max-height 0.5s ease-out;
       overflow: hidden;
     }
