@@ -83,12 +83,12 @@
 <script setup lang="ts">
 const heresHowList = [
   "Providing onboarding to get you started in the cloud following best practices.",
-  "Designing + building complete enterprise-grade, security-first cloud applications.",
+  "Designing + Building complete enterprise-grade, security-first cloud applications.",
   "Integrating existing your software, when and how you need it.",
   "Automating repetitive tasks + processes saving you time.",
   "Leveraging AI in the cloud to unlock even greater efficiency.",
   "Maintaining + upgrading all current cloud infrastructure.",
-  "Security and Monthly bill auditing.",
+  "Security and Billing audits.",
   "Creating distributed systems leveraging event-driven architecture + micro-services.",
   "Incorporating cloud technologies into your Shopify builds.",
 ];
