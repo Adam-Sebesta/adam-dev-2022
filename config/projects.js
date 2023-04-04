@@ -13,25 +13,13 @@ export default {
   },
   "reading-reimagined": {
     textColor: "black",
-    desc: `As a key member of the Reading Reimagined project team, I played a critical role in their initiative to eradicate childhood illiteracy. My primary responsibilities focused on solution design, AWS management and deployment, development pipeline automation, formulating security baselines, writing product documentation, and vendor orchestration.
+    desc: `On the Reading Reimagined project, I played a pivotal role in combating childhood illiteracy by focusing on solution design, AWS management, development pipeline automation, security implementation, product documentation, and vendor coordination.<br/>
 <br/>
+As a core team member, I crafted the technical solution for the platform's RFPs by collaborating with other team members and leveraging my expertise in AWS to ensure scalability, reliability, and cost-effectiveness.<br/>
 <br/>
-One of my primary roles was to design and develop the technical solution for the Reading Reimagined platform RFPs. This involved working closely with other members of the team to understand the specific requirements of the platform and then designing a solution that would meet those needs.
+I streamlined the development process by automating the build, test, and deployment stages, enabling rapid and efficient iteration. I also prioritized security by establishing baselines, conducting audits, and implementing industry-standard measures.<br/>
 <br/>
-<br/>
-I utilized my experience with AWS management and deployment to ensure that the platform would be scalable, reliable, and cost-effective.
-<br/>
-<br/>
-In addition to designing the technical solution, I also played a key role in automating the development pipeline. This included developing scripts and tools to automate the build, test, and deployment process, which allowed the team to iterate quickly and efficiently.
-<br/>
-<br/>
-Another critical aspect of my role was to ensure that the platform met the highest standards for security. This involved formulating security baselines, conducting security audits and assessments, and implementing industry-standard security measures.
-<br/>
-<br/>
-As part of my responsibilities, I also wrote comprehensive product documentation, which included user guides, technical documentation, and training materials. This documentation was essential in ensuring that all stakeholders had a clear understanding of the platform's functionality and how to use it.
-<br/>
-<br/>
-Finally, I was responsible for orchestrating vendors and managing relationships with third-party suppliers. This involved negotiating contracts, managing vendor performance, and ensuring that all vendors were aligned with the project's goals and objectives.`,
+To promote clarity and understanding, I authored comprehensive user guides, technical documentation, and training materials. Additionally, I managed vendor relationships, negotiated contracts, and ensured alignment with project goals, fostering success for Reading Reimagined.`,
     title: "Reading Reimagined",
     stack: ["AWS", "Terraform", "Lucidchart"],
     length: "short",

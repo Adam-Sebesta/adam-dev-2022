@@ -2,7 +2,7 @@
   <div>
     <div class="connect-leave-message-wrapper desktop">
       <nuxt-link
-        to="mailto:info@adamsebesta.dev?subject={Your Project's Name} | Let's Talk"
+        to="mailto:hello@adamsebesta.com?subject={Your Project's Name} | Let's Talk"
       >
         <svg
           width="598"
