@@ -1,10 +1,11 @@
 <template tabIndex="0">
   <div v-if="project" :class="'page project' + (readMore ? ' read-more' : '')">
+    <FloatingBackButton />
     <div class="project-info-main text-wrapper">
       <div class="project-header-arrows">
-        <nuxt-link class="project-arrow-link" to="/"
+        <nuxt-link class="project-arrow-link" :to="project.prev"
           ><span class="baunk chevron">&#x3c;</span>
-          <span> Back</span></nuxt-link
+          <span> Prev</span></nuxt-link
         >
         <nuxt-link class="project-arrow-link" :to="project.next"
           ><span>Next </span

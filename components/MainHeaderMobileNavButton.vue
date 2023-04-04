@@ -1,12 +1,16 @@
 <template>
-  <button href="" @click="$emit('toggleMobileMenu')">
+  <button
+    id="mainHeaderMobileNavButton"
+    href=""
+    @click="$emit('toggleMobileMenu')"
+    :class="sticky ? 'sticky' : ''"
+  >
     <svg
       width="30"
       height="18"
       viewBox="0 0 30 18"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      id="mainHeaderMobileNavButton"
     >
       <rect x="13" y="16" width="12" height="2" fill="#F4F8FA" />
       <path d="M8 16H13V18L8 17V16Z" fill="#F4F8FA" />
@@ -20,14 +24,54 @@
     </svg>
   </button>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+let sticky = ref(false);
+const makeStickyOnScroll = () => {
+  const header = document.querySelector("header");
+  const height = header.offsetTop;
+  const btn = document.querySelector("#mainHeaderMobileNavButton");
+  if (window.pageYOffset > height) {
+    sticky.value = true;
+  } else {
+    sticky.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", makeStickyOnScroll);
+});
+</script>
 <style lang="scss">
+@import "../assets/style/variables";
 #mainHeaderMobileNavButton {
-  width: 100%;
-  display: none;
-  @media screen and (max-width: 560px) {
-    display: flex;
-    width: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint("sm") {
+    &.sticky {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      background: var(--grey-02);
+      width: calc(var(--page-margin) + 36px);
+      height: calc(var(--page-margin) + 36px);
+      // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+      svg {
+        width: 100%;
+        display: flex;
+        width: unset;
+      }
+    }
+  }
+
+  svg {
+    width: 90%;
+    display: none;
+    @include breakpoint("sm") {
+      display: flex;
+      width: unset;
+    }
   }
 }
 </style>

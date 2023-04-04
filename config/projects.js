@@ -9,6 +9,7 @@ export default {
     year: "2023",
     to: "/projects/manifest-ai",
     next: "/projects/reading-reimagined",
+    prev: "/projects/roam",
     wip: true,
   },
   "reading-reimagined": {
@@ -28,6 +29,7 @@ To promote clarity and understanding, I authored comprehensive user guides, tech
     to: "/projects/reading-reimagined",
     liveLink: "https://aerdf.org/programs/reading-reimagined/",
     next: "/projects/aeyde",
+    prev: "/projects/manifest-ai",
     architecture: {
       images: [
         { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
@@ -60,6 +62,7 @@ Overall, working with Aeyde was an exciting project that challenged me to apply 
     to: "/projects/aeyde",
     liveLink: "https://aeyde.com/",
     next: "/projects/halotrade",
+    prev: "/projects/reading-reimagined",
     measurables: {},
     architecture: {
       images: [
@@ -88,6 +91,7 @@ Overall, the Halotrade project challenged me to apply my cloud engineering skill
     sector: "Finance",
     year: "2022",
     to: "/projects/halotrade",
+    prev: "/projects/aeyde",
     liveLink: "https://halotrade.io/",
     next: "/projects/emkfit",
   },
@@ -111,6 +115,7 @@ The Shopify store I developed for Emkfit provided a seamless customer experience
     to: "/projects/emkfit",
     liveLink: "https://www.emkfit.ca",
     next: "/projects/progolf-berlin",
+    prev: "/projects/halotrade",
   },
   "progolf-berlin": {
     textColor: "black",
@@ -127,6 +132,7 @@ The online booking service I developed included unique logic for "no shows" and 
     sector: "Golf",
     year: "2022",
     to: "/projects/progolf-berin",
+    prev: "/projects/emkfit",
     liveLink: "https://progolfberlin.com/",
     next: "/projects/skin-kravings",
     measurables: {},
@@ -161,6 +167,7 @@ Finally, I provided general guidance to the client on best practices for managin
     sector: "Beauty",
     year: "2022",
     to: "/projects/skin-kravings",
+    prev: "/projects/progolf-berin",
     next: "/projects/5oz",
     liveLink: "https://cleyobeauty.com/",
   },
@@ -175,6 +182,7 @@ Finally, I provided general guidance to the client on best practices for managin
     year: "2022",
     to: "/projects/5oz",
     next: "/projects/spectral",
+    prev: "/projects/skin-kravings",
     liveLink: "https://www.5oz.com/",
   },
   spectral: {
@@ -187,6 +195,7 @@ Finally, I provided general guidance to the client on best practices for managin
     sector: "Crypto",
     year: "2021",
     to: "/projects/spectral",
+    prev: "/projects/5oz",
     next: "/projects/roam",
     liveLink: "https://spectral.finance",
   },
@@ -210,6 +219,7 @@ The result was a highly secure and efficient application that was deployed to te
     year: "2021",
     to: "/projects/roam",
     next: "/projects/manifest-ai",
+    prev: "/projects/spectral",
     liveLink:
       "https://play.google.com/store/apps/details?id=org.nativescript.roam&ah=a2IKKW6jUgH9cYUv2x3-Bc2J44I",
   },

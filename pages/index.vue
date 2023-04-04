@@ -6,8 +6,21 @@
     <Projects />
     <Connect />
     <MainFooter />
+    <ScrollToTop />
   </div>
 </template>
+<script setup lang="ts">
+const handleHash = () => {
+  let hash = window.location.hash;
+  if (hash) {
+    let section = document.querySelector(hash);
+    section && section.scrollIntoView({});
+  }
+};
+onMounted(() => {
+  handleHash();
+});
+</script>
 <style lang="scss">
 @keyframes fadeOut {
   0% {

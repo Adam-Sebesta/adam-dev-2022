@@ -7,7 +7,8 @@
       <div class="lower-text">
         <div class="lower-text-item">
           <div class="sub1-medium lower-text-item-header">
-            Successful Businesses Use Adam’s Services
+            Successful Businesses <br />
+            Use Adam’s Services
           </div>
           <div class="lower-text-right text2-regular">
             <p class="about-lower-headline">
@@ -84,8 +85,8 @@
 const heresHowList = [
   "Providing onboarding to get you started in the cloud following best practices.",
   "Designing + Building complete enterprise-grade, security-first cloud applications.",
-  "Integrating existing your software, when and how you need it.",
-  "Automating repetitive tasks + processes saving you time.",
+  "Integrating your existing software, when and how you need it.",
+  "Automating repetitive tasks + processes, saving you time.",
   "Leveraging AI in the cloud to unlock even greater efficiency.",
   "Maintaining + upgrading all current cloud infrastructure.",
   "Security and Billing audits.",
@@ -158,6 +159,9 @@ const heresHowList = [
         }
         .sub1-medium {
           max-width: 55%;
+          @include breakpoint("sm") {
+            max-width: 60%;
+          }
         }
       }
       .lower-text-left {

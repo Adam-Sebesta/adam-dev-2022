@@ -72,7 +72,7 @@ const closeMenuAndScrollTo = (hash: string): void => {
     z-index: 2;
     cursor: pointer;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -83,7 +83,7 @@ const closeMenuAndScrollTo = (hash: string): void => {
   }
   #MobileMenu {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;

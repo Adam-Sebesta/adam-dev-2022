@@ -1,5 +1,6 @@
 <template>
   <!-- mobile -->
+
   <svg
     width="344"
     height="56"
@@ -8,6 +9,7 @@
     xmlns="http://www.w3.org/2000/svg"
     id="aboutLetsTalkMobile"
     preserveAspectRatio="xMaxYMax meet"
+    @click="scrollTo('#Connect')"
   >
     <path
       d="M343.5 55.5V0.500031H128.5V43.7169L148.138 55.5H343.5Z"
@@ -31,6 +33,7 @@
     xmlns="http://www.w3.org/2000/svg"
     id="aboutLetsTalk"
     preserveAspectRatio="xMaxYMax meet"
+    @click="scrollTo('#Connect')"
   >
     <path
       d="M1173.13 119.5H1718.5V0.5H1121.5V89.7112L1173.13 119.5Z"
@@ -45,18 +48,33 @@
     <rect class="full-length-divider" width="100%" height="1" fill="#141416" />
   </svg>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const scrollTo = (hash: string): void => {
+  let section = document.querySelector(hash);
+  console.log(section, hash);
+  section &&
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
+};
+</script>
 <style lang="scss">
 #aboutLetsTalkMobile {
   display: none;
   width: calc(100% + var(--space-xxl));
   transform: translateX(calc(var(--space-xxl) * -1));
   margin-bottom: calc(var(--space-xxxl));
+  path:first-child {
+    cursor: pointer;
+  }
 }
 #aboutLetsTalk {
   width: calc(100% + var(--space-xl));
   transform: translateX(calc(var(--space-xl) * -1));
   margin-bottom: calc(var(--space-xl) - 7vh);
+  path:first-child {
+    cursor: pointer;
+  }
   @media screen and (max-width: 1279px) {
     width: calc(100% + var(--space-xxl));
     transform: translateX(calc(var(--space-xxl) * -1));

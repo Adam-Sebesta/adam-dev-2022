@@ -22,9 +22,9 @@ const mobileMenu = ref(false);
 const handleToggleMobileMenu = (): void => {
   mobileMenu.value = !mobileMenu.value;
   if (mobileMenu.value) {
-    document.body.style.position = "fixed";
+    // document.body.style.position = "fixed";
   } else {
-    document.body.style.position = "unset";
+    // document.body.style.position = "unset";
   }
 };
 </script>
