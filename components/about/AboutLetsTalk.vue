@@ -64,17 +64,13 @@ const scrollTo = (hash: string): void => {
   width: calc(100% + var(--space-xxl));
   transform: translateX(calc(var(--space-xxl) * -1));
   margin-bottom: calc(var(--space-xxxl));
-  path:first-child {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 #aboutLetsTalk {
   width: calc(100% + var(--space-xl));
   transform: translateX(calc(var(--space-xl) * -1));
   margin-bottom: calc(var(--space-xl) - 7vh);
-  path:first-child {
-    cursor: pointer;
-  }
+  cursor: pointer;
   @media screen and (max-width: 1279px) {
     width: calc(100% + var(--space-xxl));
     transform: translateX(calc(var(--space-xxl) * -1));
