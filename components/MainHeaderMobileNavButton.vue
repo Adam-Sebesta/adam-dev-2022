@@ -50,23 +50,32 @@ onMounted(() => {
   @include breakpoint("sm") {
     &.sticky {
       position: fixed;
-      top: 0;
-      right: 0;
+      top: 26px;
+      right: var(--page-margin);
       z-index: 3;
-      background: var(--grey-02);
-      width: calc(var(--page-margin) + 36px);
-      height: calc(var(--page-margin) + 36px);
+
       // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
       svg {
         width: 100%;
         display: flex;
-        width: unset;
+        z-index: 3;
+      }
+      &::before {
+        background: var(--grey-02);
+        content: "";
+        height: 39px;
+        left: -8px;
+        opacity: 1;
+        position: absolute;
+        top: -11px;
+        width: 48px;
+        z-index: 3;
       }
     }
   }
 
   svg {
-    width: 90%;
+    width: 75%;
     display: none;
     @include breakpoint("sm") {
       display: flex;

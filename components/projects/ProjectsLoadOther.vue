@@ -123,6 +123,7 @@ const props = defineProps({ total: Number, clicked: Boolean });
     @media screen and (max-width: 560px) {
       #loadOtherProjectsBoxMobile {
         display: unset;
+        z-index: auto;
       }
       #loadOtherProjectsBox {
         display: none;

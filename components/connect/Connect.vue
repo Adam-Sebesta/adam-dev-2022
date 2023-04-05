@@ -44,7 +44,7 @@
     top: var(--space-xxxxs);
     left: 0;
     position: absolute;
-    z-index: 1;
+    z-index: auto;
     @media screen and (max-width: 560px) {
       top: var(--space-xs);
     }

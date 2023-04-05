@@ -10,7 +10,8 @@ export interface Project {
   year: string;
   liveLink?: string;
   wip?: boolean;
-  next?: string;
+  next: string;
+  prev: string;
 }
 
 export interface IProjectOb {
