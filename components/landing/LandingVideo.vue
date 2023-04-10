@@ -11,7 +11,9 @@
     alt=""
     type="video/mp4;"
     codecs="avc1.4d002a, mp4a.40.2"
-  ></video>
+  >
+    Your browser does not support the video tag.
+  </video>
   <!-- <div class="landing_video">
     <img src="../../../preload_background.png" alt="">
   </div> -->
