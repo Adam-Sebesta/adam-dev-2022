@@ -38,7 +38,7 @@ To promote clarity and understanding, I authored comprehensive user guides, tech
   },
   aeyde: {
     textColor: "black",
-    desc: `I had the privilege of working with Aeyde, a high-end shoe company based in Berlin. My role involved configuring their Shopify Plus store and designing a cloud-native "Back In Stock" service that allowed customers to enroll in product-specific waitlists and be notified when items were back in stock. This project involved several technologies, including AWS, Typescript, the storefront API, data analytics tools such as Looker and Panoply, and a Shopify app.
+    desc: `I had the privilege of working with Aeyde, a high-end footwear and accessory company based in Berlin. My role involved configuring their Shopify Plus store and designing a cloud-native "Back In Stock" service that allowed customers to enroll in product-specific waitlists and be notified when items were back in stock. This project involved several technologies, including AWS, Typescript, the storefront API, data analytics tools such as Looker and Panoply, and a Shopify app.
 <br/>
 <br/>
 The project started with customizations of the Shopify Plus store, which included theme and navigation revisions. I worked with the client to ensure that their store met their business requirements and provided a seamless customer experience.
