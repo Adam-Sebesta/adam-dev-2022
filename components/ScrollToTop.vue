@@ -42,7 +42,7 @@ onMounted(() => {
   position: fixed;
   bottom: var(--page-margin);
   right: var(--page-margin);
-  background: var(--grey-02);
+  background: var(--black-01);
   padding: 10px;
   cursor: pointer;
   opacity: 0;

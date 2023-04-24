@@ -67,7 +67,7 @@ header {
     align-items: center;
     color: var(--white-01);
     .header-logo {
-      width: 20px;
+      width: 24px;
       margin-right: calc(var(--page-margin) / 2);
     }
     @media screen and (max-width: 560px) {

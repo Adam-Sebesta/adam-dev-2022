@@ -61,7 +61,7 @@ onMounted(() => {
         z-index: 3;
       }
       &::before {
-        background: var(--grey-02);
+        background: var(--black-01);
         content: "";
         height: 39px;
         left: -8px;
