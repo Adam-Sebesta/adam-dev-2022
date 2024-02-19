@@ -55,6 +55,7 @@
 import { read } from "fs";
 import projects from "~/config/projects";
 import { Project } from "~/types/projects";
+import { useMouseFlow } from "~/composables/useMouseFlow";
 
 const route = useRoute();
 const projectTitle: string | string[] = route.params.project;
