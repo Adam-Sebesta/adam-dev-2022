@@ -23,9 +23,7 @@ useHead({
   ],
   link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
 });
-</script>
-<script setup lang="ts">
-  window._mfq = window._mfq || [];
+window._mfq = window._mfq || [];
   (function() {
     var mf = document.createElement("script");
     mf.type = "text/javascript"; mf.defer = true;
