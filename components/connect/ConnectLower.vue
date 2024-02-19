@@ -1,7 +1,7 @@
 <template>
   <div class="connect-lower">
     <div class="connect-lower-left">
-      <p class="text2-regular">© 2023 Adam Sebesta</p>
+      <p class="text2-regular">© 2024 Adam Sebesta</p>
     </div>
     <div class="connect-lower-right">
       <nuxt-link

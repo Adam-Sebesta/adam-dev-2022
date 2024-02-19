@@ -1,4 +1,4 @@
-export function useMouseflow() {
+export const useMouseFlow = () => {
   window._mfq = window._mfq || [];
   (function () {
     var mf = document.createElement("script");

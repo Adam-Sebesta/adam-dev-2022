@@ -10,7 +10,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useMouseFlow } from "~/composables/mouseflow";
 const handleHash = () => {
   let hash = window.location.hash;
   if (hash) {
