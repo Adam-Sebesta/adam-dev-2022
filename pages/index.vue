@@ -20,7 +20,7 @@ const handleHash = () => {
 
 onMounted(() => {
   handleHash();
-  initMouseFlow();
+  useMouseFlow();
 });
 </script>
 <style lang="scss">

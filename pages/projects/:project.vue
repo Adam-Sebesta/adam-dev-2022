@@ -78,7 +78,7 @@ onMounted(() => {
   checkIfImageLoaded(image).then(() => {
     document.querySelector(".glare-load").classList.add("hidden");
   });
-  initMouseFlow();
+  useMouseFlow();
 });
 </script>
 
