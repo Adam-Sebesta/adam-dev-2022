@@ -35,7 +35,7 @@ resource "azurerm_static_site" "swa" {
 
 resource "azurerm_static_site_custom_domain" "adamsebesta" {
   static_site_id  = azurerm_static_site.swa.id
-  domain_name     = "www.adamsebesta.com"
+  domain_name     = "adamsebesta.com"
   validation_type = "dns-txt-token"
 }
 
