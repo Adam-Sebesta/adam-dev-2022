@@ -112,7 +112,7 @@ onMounted(() => {
     justify-content: flex-end;
     margin: var(--space-md) var(--page-margin);
     color: var(--black-01);
-    padding-top: var(--space-lg);
+    padding-top: var(--space-xl);
     .project-header-arrows {
       display: flex;
       justify-content: space-between;

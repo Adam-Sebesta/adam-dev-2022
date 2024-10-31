@@ -28,9 +28,10 @@
 let sticky = ref(false);
 const makeStickyOnScroll = () => {
   const header = document.querySelector("header") as HTMLElement;
+  if (!header) return;
   const height = header.offsetTop;
   const btn = document.querySelector("#mainHeaderMobileNavButton");
-  if (window.pageYOffset > height) {
+  if (window.scrollY > height) {
     sticky.value = true;
   } else {
     sticky.value = false;

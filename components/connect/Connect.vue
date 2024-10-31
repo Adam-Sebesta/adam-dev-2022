@@ -18,7 +18,7 @@
 
             <div class="sub2-medium uppercase contact-text-right-lower">
               <p>hello@adamsebesta.com</p>
-              <p>+49 152 08341820</p>
+              <p>+39 333 8905526</p>
             </div>
           </div>
         </div>

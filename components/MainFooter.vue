@@ -1,7 +1,7 @@
 <template>
   <footer class="footer-wrapper">
     <div class="footer-left">
-      <p class="text2-medium uppercase">site ver // 02.2024</p>
+      <p class="text2-medium uppercase">site ver // 10.2024</p>
     </div>
     <div class="footer-right">
       <p class="text2-medium">DESIGN // Gaclav</p>
