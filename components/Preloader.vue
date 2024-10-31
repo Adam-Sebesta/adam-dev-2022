@@ -18,7 +18,8 @@ onMounted(() => {
 });
 </script>
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 .preloader {
   position: absolute;
   top: 0;

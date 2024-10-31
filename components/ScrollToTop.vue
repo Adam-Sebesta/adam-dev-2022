@@ -31,8 +31,10 @@ const scrollToTop = () => {
 };
 onMounted(() => {
   window.addEventListener("scroll", () => {
+    let header = document.querySelector("header") as HTMLElement;
+    if (!header) return;
     isArrowVisible.value =
-      window.scrollY > document.querySelector("header").offsetHeight;
+      window.scrollY > header.offsetHeight;
   });
 });
 </script>

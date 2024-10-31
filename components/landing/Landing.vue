@@ -29,7 +29,8 @@ const handleToggleMobileMenu = (): void => {
 };
 </script>
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 
 .landing {
   display: flex;
@@ -44,32 +45,32 @@ const handleToggleMobileMenu = (): void => {
     position: absolute;
     margin: var(--space-xl) 0;
     z-index: 1;
-    @include breakpoint("md") {
+    @include variables.breakpoint("md") {
       top: var(--space-xl);
     }
-    @include breakpoint("sm") {
+    @include variables.breakpoint("sm") {
       margin: var(--space-xxxl) 0;
       top: var(--space-xxxl);
     }
     h3 {
       text-shadow: -5px -2px #050454;
-      @include breakpoint("md") {
+      @include variables.breakpoint("md") {
         text-shadow: -3px -1px #050454;
       }
-      @include breakpoint("sm") {
+      @include variables.breakpoint("sm") {
         font-size: 30px;
       }
     }
     p {
       max-width: 368px;
       margin: var(--space-xxs) auto;
-      @include breakpoint("sm") {
+      @include variables.breakpoint("sm") {
         max-width: 275px;
       }
-      @include breakpoint("md") {
+      @include variables.breakpoint("md") {
         max-width: 296px;
       }
-      @include breakpoint("sm") {
+      @include variables.breakpoint("sm") {
         margin: var(--space-sm) auto;
       }
     }

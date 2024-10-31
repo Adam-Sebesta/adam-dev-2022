@@ -54,11 +54,13 @@
 <script setup lang="ts">
 import { read } from "fs";
 import projects from "~/config/projects";
-import { Project } from "~/types/projects";
+import type { Project } from "~/types/projects";
 
-const route = useRoute();
-const projectTitle: string | string[] = route.params.project;
-const project: Project = projects[projectTitle];
+const route = useRoute() as any;
+const projectTitle = route.params.project as string;
+
+// Check if `projectTitle` is a valid key in `projects`
+const project: Project | undefined = projects[projectTitle as keyof typeof projects];
 const readMore = ref(false);
 
 const checkIfImageLoaded = (image: HTMLImageElement): Promise<void> => {
@@ -66,24 +68,26 @@ const checkIfImageLoaded = (image: HTMLImageElement): Promise<void> => {
     if (image.complete) {
       resolve();
     } else {
-      image.addEventListener("load", resolve);
-      image.addEventListener("error", reject);
+      image.addEventListener("load", () => resolve);
+      image.addEventListener("error", (err) => reject(err));
     }
   });
 };
 
 onMounted(() => {
   readMore.value = false;
-  const image = document.querySelector(".project-image-main img");
+  const image = document.querySelector(".project-image-main img") as HTMLImageElement;
   checkIfImageLoaded(image).then(() => {
-    document.querySelector(".glare-load").classList.add("hidden");
+    let glare = document.querySelector(".glare-load") as HTMLElement;
+    glare.classList.add("hidden");
   });
   useMouseFlow();
 });
 </script>
 
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 .page.project {
   overflow: hidden;
   min-height: 100vh;
@@ -108,6 +112,7 @@ onMounted(() => {
     justify-content: flex-end;
     margin: var(--space-md) var(--page-margin);
     color: var(--black-01);
+    padding-top: var(--space-lg);
     .project-header-arrows {
       display: flex;
       justify-content: space-between;
@@ -266,7 +271,7 @@ onMounted(() => {
     }
   }
 }
-@include breakpoint("md") {
+@include variables.breakpoint("md") {
   .page.project {
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -280,6 +285,7 @@ onMounted(() => {
       margin-top: var(--page-margin);
       height: unset;
       min-height: unset;
+      padding-top: unset;
       .project-header-arrows {
         position: unset;
         margin-bottom: var(--space-lg);

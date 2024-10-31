@@ -1,16 +1,94 @@
 export default {
+  "magpie-literacy": {
+    textColor: "black",
+    desc: `For Magpie Literacy, a project was undertaken to revolutionize their cloud infrastructure, transitioning to a fully integrated and optimized AWS environment. This initiative not only involved migrating to AWS but also a comprehensive restructuring to sunset obsolete accounts and realign the AWS Organization structure with the company's operational framework. The meticulous migration and resource redeployment process were expertly managed through Terraform, ensuring a seamless transition with zero data or configuration loss.
+
+    A critical aspect of this transformation was the refactoring of AWS alongside the integration of supporting tools like Datadog. This ensured enhanced operability and maintained the integrity of the system’s monitoring capabilities. The focus on ensuring a smooth transition was paramount, with special attention given to preserving data integrity and system configurations.
+    
+    In the midst of this migration, I leveraged the opportunity to implement cost optimization strategies based on usage metrics, further enhancing the value of the new infrastructure. Additionally, a thorough security and resiliency audit was conducted, ensuring that the new AWS environment not only met but exceeded industry standards for security and reliability.
+    
+    The integration of the new AWS build with the organization's Slack and monitoring systems marked a significant advancement in operational efficiency and communication. To support this transformation, I authored comprehensive documentation, detailing the new system architecture, operational procedures, and best practices. This ensured that the transition was not only technical but also knowledge-driven, empowering the team with the understanding and tools necessary for ongoing success.
+    
+    Finally, the project culminated in the safe deletion and suspension of old accounts and resources using Terraform, closing the chapter on the old infrastructure while ushering in a new era of cloud computing excellence for Magpie Literacy. This project stands as a testament to the power of strategic planning, technical expertise, and the seamless integration of cutting-edge technology to drive organizational success.`,
+    title: "Magpie Literacy",
+    stack: ["AWS", "Terraform", "Datadog"],
+    length: "long",
+    sector: "EdTech",
+    year: "2024",
+    to: "/projects/magpie-literacy",
+    next: "/projects/poesie-veneziane",
+    prev: "/projects/roam", 
+    liveLink: "https://learn.magpie.org/",
+    architecture: {
+      images: [
+        { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
+      ],
+    },
+  },
+  "poesie-veneziane": {
+    textColor: "black",
+    desc: `For Poesie Veneziane, a luxury Italian footwear brand, our engagement began in 2024 with the management of their Shopify platform. We implemented various design enhancements and UI improvements, such as lazy loading, to optimize page load times and provide a seamless shopping experience. Additionally, we leveraged cloud-based solutions to introduce a range of automations, including a streamlined return process, custom discount code generation for birthdays, and targeted marketing initiatives.
+    
+    Ongoing development support has been a cornerstone of this project, allowing us to continually refine and enhance the platform’s performance and functionality. With a focus on operational efficiency and customer engagement, we are committed to supporting the brand’s growth in the luxury e-commerce space.
+    
+    Looking ahead, we are excited to continue collaborating with Poesie Veneziane, exploring new ways to integrate cutting-edge technology and automation to elevate their brand in the digital marketplace.`,
+    title: "Poesie Veneziane",
+    stack: ["Shopify", "AWS", "JavaScript"],
+    length: "medium",
+    sector: "Luxury E-commerce",
+    year: "2024",
+    to: "/projects/poesie-veneziane",
+    next: "/projects/kalloghlian-myers",
+    prev: "/projects/magpie-literacy",
+    liveLink: "https://poesieveneziane.com/",
+    architecture: {
+      images: [
+        { src: "poesie_architecture.jpg", alt: "Shopify Architecture Diagram" },
+      ],
+    },
+  },
+  "kalloghlian-myers": {
+    textColor: "black",
+    desc: `For the project with Kalloghlian Myers LLP, one of Toronto's premier class-action law firms, I had the unique opportunity to pioneer the integration of AI into legal operations. The objective was ambitious: to develop a localized firm chatbot, leveraging AI to digest comprehensive case information, enabling the client and their team to interact and query the dataset on a case-by-case basis.
+
+    To achieve this, we harnessed the power of AWS, Slack, and Langchain to construct an event-based architecture that melded seamlessly into the client's Slack ecosystem. This innovation allowed for app-based prompts within various channels, offering a revolutionary way to access and interact with case data directly from the familiar interface of Slack.
+    
+    One of the primary challenges we faced was managing long call times, a limitation compounded by the need to work within restricted context windows. Additionally, the sensitive nature of case data demanded stringent security measures to ensure confidentiality and compliance with legal standards. Keeping pace with the rapidly evolving AI landscape also posed a significant challenge, requiring us to be agile and forward-thinking in our approach.
+    
+    Despite these hurdles, the pilot project exceeded our expectations. It served as a powerful demonstration of how AI can enhance efficiency and decision-making in legal practices. While the project was exploratory in nature, the insights gained have laid a solid foundation for future developments. We are excited about the potential to continue creating sleek application interfaces that connect and support corporate teams, all while safely leveraging the power of artificial intelligence to streamline operations and enhance service delivery.`,
+    title: "Kalloghlian Myers",
+    stack: ["AWS", "Slack", "Langchain"],
+    length: "long",
+    sector: "Legal",
+    year: "2023",
+    to: "/projects/kalloghlian-myers",
+    next: "/projects/manifest-ai",
+    prev: "/projects/poesie-veneziane",
+    liveLink: "https://www.kalloghlianmyers.com/",
+    architecture: {
+      images: [
+        { src: "progolf_architecture.jpg", alt: "Architecture Diagram" },
+      ],
+    },
+  },
   "manifest-ai": {
     textColor: "black",
-    desc: `To be disclosed`,
-    title: "WIP: Manifest AI",
+    desc: `The Manifest-AI project for Modern Mantra was an ambitious exploration into the realm of generative AI, particularly focused on creating high-resolution "collages" through a unique, iterative approach. In partnership with an AI engineer, we capitalized on the robust capabilities of GPU-equipped EC2 instances, setting the foundation for a pioneering prompt-based generative image pipeline.
+
+    Central to achieving a truly decoupled service architecture for this project were several AWS services that worked in concert to manage and process long-running jobs, which could take 20-30 minutes for a single asset. Amazon SQS (Simple Queue Service) was integral to managing communication between distributed components of our architecture, ensuring that messages regarding job status and completion were reliably transmitted. Amazon SES (Simple Email Service) facilitated notifications and updates to stakeholders, providing alerts on job progress and completion. Amazon S3 (Simple Storage Service) served as the backbone for storing input data and the generated high-resolution images, enabling scalable and secure access to assets throughout the processing pipeline.
+    
+    The deployment of these services, alongside our primary EC2 instances, exemplified a sophisticated approach to handling intensive computational tasks. This architecture allowed for scalability, reliability, and efficiency, ensuring that even the most resource-intensive jobs were completed smoothly without overburdening any single component of the system.
+    
+    Although the project concluded in the pilot phase due to external factors, it underscored the potential of combining cloud computing with AI to push the boundaries of creative image generation. This initiative was a testament to the power of leveraging advanced AWS services in concert to solve complex problems, providing a scalable and flexible infrastructure capable of supporting innovative AI applications.`,
+    title: "Manifest AI",
     stack: ["AWS", "Stable Diffusion", "Typescript"],
     length: "long",
     sector: "AI Art",
     year: "2023",
     to: "/projects/manifest-ai",
     next: "/projects/reading-reimagined",
-    prev: "/projects/roam",
-    wip: true,
+    prev: "/projects/kalloghlian-myers",
+    wip: false,
   },
   "reading-reimagined": {
     textColor: "black",
@@ -218,7 +296,7 @@ The result was a highly secure and efficient application that was deployed to te
     sector: "Travel",
     year: "2021",
     to: "/projects/roam",
-    next: "/projects/manifest-ai",
+    next: "/projects/magpie-literacy",
     prev: "/projects/spectral",
     liveLink:
       "https://play.google.com/store/apps/details?id=org.nativescript.roam&ah=a2IKKW6jUgH9cYUv2x3-Bc2J44I",

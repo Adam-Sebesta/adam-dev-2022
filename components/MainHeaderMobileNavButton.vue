@@ -27,7 +27,7 @@
 <script setup lang="ts">
 let sticky = ref(false);
 const makeStickyOnScroll = () => {
-  const header = document.querySelector("header");
+  const header = document.querySelector("header") as HTMLElement;
   const height = header.offsetTop;
   const btn = document.querySelector("#mainHeaderMobileNavButton");
   if (window.pageYOffset > height) {
@@ -42,12 +42,13 @@ onMounted(() => {
 });
 </script>
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 #mainHeaderMobileNavButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include breakpoint("sm") {
+  @include variables.breakpoint("sm") {
     &.sticky {
       position: fixed;
       top: 26px;
@@ -77,7 +78,7 @@ onMounted(() => {
   svg {
     width: 75%;
     display: none;
-    @include breakpoint("sm") {
+    @include variables.breakpoint("sm") {
       display: flex;
       width: unset;
     }

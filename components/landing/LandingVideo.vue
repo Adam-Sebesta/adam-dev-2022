@@ -48,7 +48,8 @@ onMounted(() => {
 });
 </script>
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 .landing_video {
   min-height: 1200px;
   // width: calc(100% - (var(--space-xl) * 2));

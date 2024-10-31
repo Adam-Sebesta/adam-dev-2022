@@ -31,7 +31,7 @@
   />
 </template>
 <script setup lang="ts">
-import { IProjectOb } from "~~/types/projects";
+import type { IProjectOb } from "~~/types/projects";
 import Projects from "../../config/projects";
 const projects: IProjectOb = Projects;
 const loadMoreClicked = ref(false);
@@ -40,7 +40,8 @@ const maxProjects = computed((): Number => {
 });
 </script>
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 .projects {
   display: flex;
   flex-direction: column;

@@ -95,7 +95,8 @@ const heresHowList = [
 ];
 </script>
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 
 .about {
   display: flex;
@@ -104,7 +105,7 @@ const heresHowList = [
   min-height: 100vh;
   padding: var(--space-lg) var(--space-xl) 0 var(--space-xl);
   background: var(--white-01);
-  @include breakpoint("md") {
+  @include variables.breakpoint("md") {
     min-height: unset;
     padding: var(--space-lg) var(--space-xxl) 0 var(--space-xxl);
   }
@@ -128,11 +129,11 @@ const heresHowList = [
       flex-direction: column;
       align-items: flex-end;
       margin: var(--space-xxl) 0;
-      @include breakpoint("md") {
+      @include variables.breakpoint("md") {
         align-items: flex-start;
         margin-top: var(--space-xxxl);
       }
-      @include breakpoint("sm") {
+      @include variables.breakpoint("sm") {
         align-items: flex-start;
         margin-top: var(--space-xxxl);
         font-size: 8px;
@@ -159,7 +160,7 @@ const heresHowList = [
         }
         .sub1-medium {
           max-width: 55%;
-          @include breakpoint("sm") {
+          @include variables.breakpoint("sm") {
             max-width: 60%;
           }
         }
@@ -183,7 +184,7 @@ const heresHowList = [
         }
       }
 
-      @include breakpoint("md") {
+      @include variables.breakpoint("md") {
         flex-direction: column;
         .lower-text-left {
           min-width: 100%;

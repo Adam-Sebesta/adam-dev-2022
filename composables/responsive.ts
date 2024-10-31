@@ -1,6 +1,6 @@
-import { Device } from "~~/types/devices";
+import type { Device } from "~~/types/devices";
 export function useResponsive() {
-  const device = (): Device | undefined => {
+  const device = (): Device => {
     if (window.innerWidth < 560) {
       return "mobile";
     }
@@ -11,6 +11,7 @@ export function useResponsive() {
     if (window.innerWidth > 840) {
       return "desktop";
     }
+    return "desktop";
   };
   return { device };
 }

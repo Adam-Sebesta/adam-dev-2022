@@ -21,13 +21,14 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
+@use "../assets/style/variables";
 .floating-back-button {
   position: unset;
   font-size: 12px;
   margin-left: 27px;
 }
-@include breakpoint("sm") {
+@include variables.breakpoint("sm") {
   .floating-back-button {
     position: fixed;
     top: var(--page-margin);

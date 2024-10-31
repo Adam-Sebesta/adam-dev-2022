@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { HeaderLink } from "types/headerlink";
+import type { HeaderLink } from "~~/types/headerLink";
 
 const links: HeaderLink[] = [
   {

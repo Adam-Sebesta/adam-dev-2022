@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { HeaderLink } from "~~/types/headerlink";
+import type { HeaderLink } from "~~/types/headerLink";
 const props = defineProps({ active: Boolean });
 const emit = defineEmits(["toggleMobileMenu"]);
 const links: HeaderLink[] = [

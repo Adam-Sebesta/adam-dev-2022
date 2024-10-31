@@ -84,10 +84,8 @@ const props = defineProps({ total: Number, clicked: Boolean });
 .projects-load-other {
   width: 100%;
   background-color: var(--white-01);
+
   .total-square {
-    @media screen and (min-width: 2400px) {
-      height: clamp(350px, var(--space-xl), 500px);
-    }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -98,57 +96,72 @@ const props = defineProps({ total: Number, clicked: Boolean });
     padding: var(--space-sm);
     border: 1px solid var(--black-03);
 
+    // Media query moved below main declarations
+    @media screen and (min-width: 2400px) {
+      height: clamp(350px, var(--space-xl), 500px);
+    }
+
     @media screen and (max-width: 1279px) {
       width: calc((100% - (var(--space-xxl) * 2)) * 0.35);
       margin: var(--space-xl) var(--space-xxl) 1px auto;
       height: 100px;
     }
+
     @media screen and (max-width: 560px) {
       width: 60%;
       height: 116px;
     }
+
     h2 {
       text-align: right;
       line-height: 56%;
     }
+
     .total-square-corner {
       position: absolute;
       top: 0;
       right: 0;
     }
   }
+
   .project-load-other-svg-wrapper {
     position: relative;
     height: 20vh;
+
     #loadOtherProjectsBoxMobile {
       display: none;
     }
+
     @media screen and (max-width: 560px) {
       #loadOtherProjectsBoxMobile {
         display: unset;
         z-index: auto;
       }
+
       #loadOtherProjectsBox {
         display: none;
       }
     }
+
     .load-other-projects-box {
       position: absolute;
       height: unset;
       cursor: pointer;
       z-index: 2;
       width: calc((100% - (var(--space-xl) * 2)) * 0.35);
-      // position: absolute;
       right: 0;
       margin: var(--space-xxxxs) var(--space-xl) 0 0;
+
       @media screen and (max-width: 1279px) {
         width: calc((100% - (var(--space-xxl) * 2)) * 0.35);
         margin: var(--space-xxxxs) var(--space-xxl) 0 0;
       }
+
       @media screen and (max-width: 560px) {
         width: 60%;
       }
     }
+
     .load-other-divider {
       width: 100%;
       height: unset;
