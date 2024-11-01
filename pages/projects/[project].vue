@@ -68,7 +68,7 @@ const checkIfImageLoaded = (image: HTMLImageElement): Promise<void> => {
     if (image.complete) {
       resolve();
     } else {
-      image.addEventListener("load", () => resolve);
+      image.addEventListener("load", resolve);
       image.addEventListener("error", (err) => reject(err));
     }
   });
